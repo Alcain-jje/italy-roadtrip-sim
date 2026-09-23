@@ -1,0 +1,222 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-05-06T03:25:00Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 42089777,
+  "center": {
+    "lat": 41.6377660,
+    "lon": 13.3498513
+  },
+  "tags": {
+    "highway": "services",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 59142636,
+  "center": {
+    "lat": 41.3528952,
+    "lon": 13.3816161
+  },
+  "tags": {
+    "brand": "Total",
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 140102953,
+  "center": {
+    "lat": 41.4977263,
+    "lon": 13.6834863
+  },
+  "tags": {
+    "area": "yes",
+    "highway": "services",
+    "name": "Casilina Est",
+    "operator": "Autogrill S.p.A.",
+    "toilets": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 188389658,
+  "center": {
+    "lat": 41.4963800,
+    "lon": 13.6838817
+  },
+  "tags": {
+    "area": "yes",
+    "highway": "services",
+    "name": "Casilina Ovest"
+  }
+},
+{
+  "type": "way",
+  "id": 221585017,
+  "center": {
+    "lat": 41.3085279,
+    "lon": 13.3993184
+  },
+  "tags": {
+    "brand": "Lukoil",
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 234298647,
+  "center": {
+    "lat": 41.3928219,
+    "lon": 13.5200944
+  },
+  "tags": {
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 466189217,
+  "center": {
+    "lat": 41.5984999,
+    "lon": 13.4926446
+  },
+  "tags": {
+    "area": "yes",
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 702079176,
+  "center": {
+    "lat": 41.6614229,
+    "lon": 13.3721895
+  },
+  "tags": {
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 758374285,
+  "center": {
+    "lat": 41.6475591,
+    "lon": 13.3429335
+  },
+  "tags": {
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 837556663,
+  "center": {
+    "lat": 41.6624977,
+    "lon": 13.3977731
+  },
+  "tags": {
+    "area": "yes",
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 837559797,
+  "center": {
+    "lat": 41.6647822,
+    "lon": 13.3853439
+  },
+  "tags": {
+    "area": "yes",
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 837560614,
+  "center": {
+    "lat": 41.6577915,
+    "lon": 13.3534838
+  },
+  "tags": {
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 1147393135,
+  "center": {
+    "lat": 41.6483102,
+    "lon": 13.3372080
+  },
+  "tags": {
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 1147393136,
+  "center": {
+    "lat": 41.6471725,
+    "lon": 13.3362040
+  },
+  "tags": {
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 1147393137,
+  "center": {
+    "lat": 41.6442131,
+    "lon": 13.3334314
+  },
+  "tags": {
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 1147393138,
+  "center": {
+    "lat": 41.6410684,
+    "lon": 13.3320654
+  },
+  "tags": {
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 1147393139,
+  "center": {
+    "lat": 41.6243156,
+    "lon": 13.3213797
+  },
+  "tags": {
+    "highway": "services"
+  }
+},
+{
+  "type": "way",
+  "id": 1290847977,
+  "center": {
+    "lat": 41.8842961,
+    "lon": 13.4515552
+  },
+  "tags": {
+    "highway": "services"
+  }
+}
+
+  ]
+}

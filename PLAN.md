@@ -71,10 +71,11 @@
 | 시각 | 내용 |
 |---|---|
 | 08:30 | 출발. SS366 → A3 → 나폴리 우회 → A1 북행 |
-| 11:45 | **오르비에토** Campo della Fiera 주차(에스컬레이터/푸니쿨라로 절벽 위 구시가) 또는 Orvieto Scalo 역 앞 주차 후 푸니쿨라 |
-| 12:00 | 두오모(파사드 필수) → 점심 **Trattoria del Moro Aronne**(★, 움브리치 파스타) 또는 **L'Antica Cantina**. 카페 **Montanucci** |
-| 14:00 | 출발 → Bolsena 호수 서안(SS71) → Pitigliano 방향 → SS74 → Civitella Marittima. 또는 A1 Chiusi 출구 → SS2 Cassia → Buonconvento → SS223 (시뮬레이터가 계산한 쪽 사용) |
-| 16:30 | **Antico Casale L'Impostino** 체크인 |
+| 10:30 | **Autogrill Casilina Ovest**(A1 북행, 프로시노네 남쪽) 15분 휴식. 커피는 계산 먼저 → 영수증을 바에. 주유 필요하면 셀프(Fai da te) 레인 |
+| 12:00 | **오르비에토** Campo della Fiera 주차(에스컬레이터/푸니쿨라로 절벽 위 구시가) 또는 Orvieto Scalo 역 앞 주차 후 푸니쿨라 |
+| 12:15 | 두오모(파사드 필수) → 점심 **Trattoria del Moro Aronne**(★, 움브리치 파스타) 또는 **L'Antica Cantina**. 카페 **Montanucci** |
+| 14:15 | 출발 → Bolsena 호수 서안(SS71) → Pitigliano 방향 → SS74 → Civitella Marittima. 또는 A1 Chiusi 출구 → SS2 Cassia → Buonconvento → SS223 (시뮬레이터가 계산한 쪽 사용) |
+| 16:45 | **Antico Casale L'Impostino** 체크인 |
 | 18:00 | (요청) **La Tana del Lupo Bianco 시음 'Classica'**(와인 3종+리제르바 Impostino, 셀러·포도밭 투어 포함 약 1.5h, €25/인). 공식 슬롯은 10:00~11:00 / 14:30~16:00이라 **저녁 전 18:00 슬롯을 이메일로 별도 요청**. 불가 시 10/10 아침 10:00 슬롯 후 출발(피엔차 일정 1시간 뒤로) |
 | 19:30 | **La Locanda del Viandante** 저녁(★ 예약 필수, 외부 손님도 받음, 마렘마 향토 요리 + 자체 와인). 셰프 Stefano |
 
@@ -160,7 +161,7 @@
 | 10/6 | 15:00 | Hertz Termini → Porta Portese 우회 → hu Roma |
 | 10/7 | 08:00 | hu Roma → Napoli Brin → Pompei Porta Marina → Agerola → Furore |
 | 10/8 | 09:00 | Furore → Positano Mandara → Amalfi Luna Rossa → Furore |
-| 10/9 | 08:30 | Furore → Orvieto → Impostino |
+| 10/9 | 08:30 | Furore → Autogrill Casilina Ovest → Orvieto → Impostino |
 | 10/10 | 08:45 | Impostino → Pienza → Montepulciano P1 → Siena Stadio → hu Firenze |
 | 10/12 | 08:30 | hu Firenze → Porta Galliera(viali) → Bologna VIII Agosto → Porta Galliera → Hertz Milano Centrale |
 
