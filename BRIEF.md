@@ -94,3 +94,8 @@ ZTL(통행제한구역) 폴리곤을 겹쳐 보여 "경로가 ZTL을 통과하�
 - 추가 웨이포인트: Napoli Parcheggio Brin(40.84618,14.28030) / Pompei Porta Marina(40.74848,14.48193) / Orvieto Campo della Fiera(42.71679,12.10523) / Montepulciano P1(43.09682,11.78522) / Bologna Piazza VIII Agosto(44.50038,11.34536). 모두 Nominatim 실측.
 - 근사 ZTL 추가: Napoli Centro Antico, Bologna Centro(매일 07~20). 볼로냐 초기 폴리곤이 viali·주차장을 덮어 위반 오탐 → 북쪽 Via Irnerio 선까지로 축소하고 주차장 접근 노치 반영. 그래도 OSRM이 Via San Felice로 시내 관통 → Porta Galliera(44.5046,11.3436) 경유점을 진입·이탈 양쪽에 넣어 viali 우회 강제. 폴리곤 북변을 Viale Masini 남쪽(44.5022)·Via Milazzo 진입로 서쪽(lon<11.35 제외)으로 재조정 → 최종 6구간 위반 0 (총 1,425 km).
 - 출발시각: 10/6 15:00(바티칸 투어 후 Pizzarium 여유), 10/7 08:00, 10/9 08:30, 10/10 08:45, 10/12 08:30.
+
+## 12. 정차지 주차 최적화 (2026-09-23)
+- 10/9 Furore→Orvieto 사이 Autogrill Casilina Ovest(A1 북행, 41.49638,13.68388; OSM way 188389658) 경유점 추가. 출발 후 약 1h45~2h.
+- Orvieto: Campo della Fiera 유지(€1.5/h, ZTL 밖, 무료 엘리베이터·에스컬레이터). 무료 대안 Piazza della Pace+푸니쿨라(€1.3/인)는 3인 기준 더 비쌈.
+- Bologna: Piazza VIII Agosto(€3.3/h) → **Parcheggio Staveco**(Viale Panzacchi 10, 44.48596,11.34421, €2/h·최대 €12, 07~01)로 변경. 입구가 viali 위라 ZTL 진입 경로 문제가 사라져 Porta Galliera 경유점 제거. 근사 폴리곤 SW 변을 viali 안쪽(44.4905,11.332 → 44.4880,11.344)으로 조정해 순환도로 주행 오탐 제거. 6구간 위반 0, 총 1,443 km.

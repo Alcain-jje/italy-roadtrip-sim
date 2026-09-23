@@ -72,7 +72,7 @@
 |---|---|
 | 08:30 | 출발. SS366 → A3 → 나폴리 우회 → A1 북행 |
 | 10:30 | **Autogrill Casilina Ovest**(A1 북행, 프로시노네 남쪽) 15분 휴식. 커피는 계산 먼저 → 영수증을 바에. 주유 필요하면 셀프(Fai da te) 레인 |
-| 12:00 | **오르비에토** Campo della Fiera 주차(에스컬레이터/푸니쿨라로 절벽 위 구시가) 또는 Orvieto Scalo 역 앞 주차 후 푸니쿨라 |
+| 12:00 | **오르비에토 Campo della Fiera 주차**(Strada di Porta Romana, **€1.50/h**, ZTL 밖, 3층 구조). 무료 엘리베이터(Ripa Medici)·에스컬레이터로 절벽 위 구시가까지 5분, 두오모까지 다시 5분. 2.5시간 약 €4. 대안: Orvieto Scalo 역 앞 **Piazza della Pace 무료 주차** + 푸니쿨라(€1.30/인, 10분 간격) → 3인 왕복 €7.80이라 오히려 비쌈 |
 | 12:15 | 두오모(파사드 필수) → 점심 **Trattoria del Moro Aronne**(★, 움브리치 파스타) 또는 **L'Antica Cantina**. 카페 **Montanucci** |
 | 14:15 | 출발 → Bolsena 호수 서안(SS71) → Pitigliano 방향 → SS74 → Civitella Marittima. 또는 A1 Chiusi 출구 → SS2 Cassia → Buonconvento → SS223 (시뮬레이터가 계산한 쪽 사용) |
 | 16:45 | **Antico Casale L'Impostino** 체크인 |
@@ -113,8 +113,8 @@
 | 시각 | 내용 |
 |---|---|
 | 08:30 | 캠핑장 출발 → A1 북행(아펜니노 구간) |
-| 09:45 | **볼로냐 Piazza VIII Agosto 지하주차**(24시간, ZTL 밖·ZTL 경계 인접). 반드시 **순환도로(viali) → Porta Galliera → Via Milazzo**로 진입. 내비가 Via San Felice·Via Irnerio로 시내를 관통시키면 ZTL 위반(볼로냐 ZTL은 **월요일 포함 매일 07~20**). 시뮬레이터에 Porta Galliera 경유점 반영 |
-| 10:00 | 도보 8분 → Piazza Maggiore → 산 페트로니오 → **Quadrilatero** 시장 골목 → 두 탑 |
+| 09:45 | **볼로냐 Parcheggio Staveco**(Viale Panzacchi 10, 노천 180면, **€2/h · 1일 최대 €12**, 07:00~01:00, 카드 결제). 입구가 순환도로(viali) 남쪽에 바로 붙어 있어 **ZTL 안으로 들어갈 일이 없음**. Porta Castiglione → Via Castiglione → Piazza Maggiore 도보 12분. 볼로냐 ZTL은 **월요일 포함 매일 07~20**이니 내비가 성 안으로 안내하면 무시.<br>비교: Piazza VIII Agosto 지하 €3.30/h(3h €9.90, 도보 8분) / Tanari 환승주차 €0.60/h + 29번 버스(3인 왕복 €9) → Staveco가 3시간 기준 €6로 최저 |
+| 10:00 | 도보 12분(Via Castiglione 아케이드) → Piazza Maggiore → 산 페트로니오 → **Quadrilatero** 시장 골목 → 두 탑 |
 | 11:30 | 이른 점심 **Sfoglia Rina**(월 영업, 예약 불가, 11:30 오픈 직후) 또는 **Osteria dell'Orsa**(무휴). 탈리아텔레 알 라구, 토르텔리니 인 브로도 |
 | 12:45 | 출발 → A1 → 밀라노 (Area C는 월 07:30~19:30 활성이지만 중앙역은 Area C 밖. 내비가 Bastioni 안쪽으로 들어가면 무시) |
 | 15:15 | 주유 만땅(반납 조건 확인) → **Hertz 밀라노 중앙역**(Piazza Luigi di Savoia) 반납 15:30~16:00. 반납 전 차량 사진 |
@@ -163,7 +163,7 @@
 | 10/8 | 09:00 | Furore → Positano Mandara → Amalfi Luna Rossa → Furore |
 | 10/9 | 08:30 | Furore → Autogrill Casilina Ovest → Orvieto → Impostino |
 | 10/10 | 08:45 | Impostino → Pienza → Montepulciano P1 → Siena Stadio → hu Firenze |
-| 10/12 | 08:30 | hu Firenze → Porta Galliera(viali) → Bologna VIII Agosto → Porta Galliera → Hertz Milano Centrale |
+| 10/12 | 08:30 | hu Firenze → Bologna Staveco(viali 남쪽) → Hertz Milano Centrale |
 
 ## 부록 A. Impostino 예약 메일 템플릿 (영어, 괄호는 채우기)
 
