@@ -1,0 +1,4398 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-08T06:32:36Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 107425559,
+  "center": {
+    "lat": 44.8365776,
+    "lon": 11.6196528
+  },
+  "tags": {
+    "landuse": "residential",
+    "name": "ZTL Duomo"
+  }
+},
+{
+  "type": "way",
+  "id": 584692911,
+  "center": {
+    "lat": 44.3835095,
+    "lon": 9.0321425
+  },
+  "tags": {
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "description": "Zona a Traffico Limitato",
+    "motor_vehicle": "private",
+    "name": "ZTL Nervi",
+    "psv": "yes",
+    "taxi": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1082381674,
+  "center": {
+    "lat": 39.2195831,
+    "lon": 9.1066675
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Stampace Basso",
+    "type": "boundary"
+  }
+},
+{
+  "type": "way",
+  "id": 1082383734,
+  "center": {
+    "lat": 39.2195129,
+    "lon": 9.1126441
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Stampace Alto",
+    "type": "boundary"
+  }
+},
+{
+  "type": "way",
+  "id": 1082415584,
+  "center": {
+    "lat": 39.2215105,
+    "lon": 9.1194221
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Villanova",
+    "type": "boundary"
+  }
+},
+{
+  "type": "way",
+  "id": 1082794261,
+  "center": {
+    "lat": 40.9156265,
+    "lon": 8.7130676
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Castelsardo"
+  }
+},
+{
+  "type": "way",
+  "id": 1090956343,
+  "center": {
+    "lat": 44.4965565,
+    "lon": 11.3421151
+  },
+  "tags": {
+    "alt_name:en": "Limited Traffic Zone Bologna - T Zone",
+    "alt_name:it": "Zona Traffico Limitato Bologna - Zona T",
+    "author": "Comune di Bologna",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-12-08",
+    "emergency": "yes",
+    "foot": "no",
+    "foot:conditional": "yes @ (Sa 08:00-24:00; Su 00:00-22:00; PH 08:00-22:00)",
+    "goods": "permit",
+    "moped": "yes",
+    "moped:conditional": "no @ (Sa 08:00-24:00; Su 00:00-22:00; PH 08:00-22:00)",
+    "motor_vehicle": "permit",
+    "motor_vehicle:conditional": "no @ (Sa 08:00-24:00; Su 00:00-22:00; PH 08:00-22:00)",
+    "motorcycle": "yes",
+    "motorcycle:conditional": "no @ (Sa 08:00-24:00; Su 00:00-22:00; PH 08:00-22:00)",
+    "name": "ZTL Bologna - Zona T",
+    "operator": "Comune di Bologna",
+    "psv": "yes",
+    "psv:conditional": "no @ (Sa 08:00-24:00; Su 00:00-22:00; PH 08:00-22:00)",
+    "short_name": "Zona T",
+    "source": "Comune di Bologna",
+    "website": "https://www.comune.bologna.it/informazioni/zona-t-t-days"
+  }
+},
+{
+  "type": "way",
+  "id": 1181836696,
+  "center": {
+    "lat": 44.4954408,
+    "lon": 11.3326243
+  },
+  "tags": {
+    "alt_name:en": "Special Limited Traffic Zone Bologna - Pratello-San Francesco",
+    "alt_name:it": "Zona Traffico Limitato Speciale Bologna - Pratello-San Francesco",
+    "author": "Comune di Bologna",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-12-08",
+    "emergency": "yes",
+    "goods": "permit",
+    "motor_vehicle": "permit",
+    "name": "ZTL Bologna - ZTLS Pratello-San Francesco",
+    "operator": "Comune di Bologna",
+    "psv": "yes",
+    "short_name": "ZTLS Pratello-San Francesco",
+    "source": "Comune di Bologna",
+    "website": "https://www.comune.bologna.it/informazioni/zona-traffico-limitato-speciale-ztls-san-francesco-pratello"
+  }
+},
+{
+  "type": "way",
+  "id": 1287599734,
+  "center": {
+    "lat": 45.5840772,
+    "lon": 9.2754001
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Monza"
+  }
+},
+{
+  "type": "way",
+  "id": 1319901077,
+  "center": {
+    "lat": 37.6509769,
+    "lon": 14.6407376
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "emergency": "yes",
+    "fixme": "Add time tags",
+    "motor_vehicle": "permit",
+    "name": "ZTL Regalbuto",
+    "seasonal": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1418888669,
+  "center": {
+    "lat": 42.2322981,
+    "lon": 14.3917693
+  },
+  "tags": {
+    "alt_name": "ZTL Lanciano - Lancianovecchia",
+    "alt_name:en": "Limited Traffic Zone Lanciano - Lancianovecchia",
+    "alt_name:it": "Zona Traffico Limitato Lanciano - Lancianovecchia",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-07-31",
+    "name": "ZTL Lancianovecchia",
+    "source": "Comune di Lanciano",
+    "source:url": "https://www.comune.lanciano.ch.it/Novita/Avvisi/Orari-delle-ZTL-nei-quartieri-Borgo-e-Lancianovecchia",
+    "vehicle": "yes",
+    "vehicle:conditional": "yes @ (Mo-Sa 09:01-20:59)"
+  }
+},
+{
+  "type": "way",
+  "id": 1418888670,
+  "center": {
+    "lat": 42.2293093,
+    "lon": 14.3895870
+  },
+  "tags": {
+    "alt_name": "ZTL Lanciano - Borgo",
+    "alt_name:en": "Limited Traffic Zone Lanciano - Borgo",
+    "alt_name:it": "Zona Traffico Limitato Lanciano - Borgo",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-07-31",
+    "name": "ZTL Borgo",
+    "source": "Comune di Lanciano",
+    "source:url": "https://www.comune.lanciano.ch.it/Novita/Avvisi/Orari-delle-ZTL-nei-quartieri-Borgo-e-Lancianovecchia",
+    "vehicle": "yes",
+    "vehicle:conditional": "yes @ (Mo-Sa 07:01-20:59)"
+  }
+},
+{
+  "type": "way",
+  "id": 1429266660,
+  "center": {
+    "lat": 43.8430359,
+    "lon": 13.0143199
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona A",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone A",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona A",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona A",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1429395163,
+  "center": {
+    "lat": 43.8438537,
+    "lon": 13.0149974
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona B",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone B",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona B",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona B",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1429395164,
+  "center": {
+    "lat": 43.8446864,
+    "lon": 13.0151509
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona C",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone C",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona C",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona C",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1429395165,
+  "center": {
+    "lat": 43.8432987,
+    "lon": 13.0182029
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Zona C",
+    "alt_name:en": "Limited Traffic Zone Fano - Zone C",
+    "alt_name:it": "Zona Traffico Limitato Fano - Zona C",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Zona C",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1429395166,
+  "center": {
+    "lat": 43.8443851,
+    "lon": 13.0192232
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Zona E",
+    "alt_name:en": "Limited Traffic Zone Fano - Zone E",
+    "alt_name:it": "Zona Traffico Limitato Fano - Zona E",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Zona E",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1429395167,
+  "center": {
+    "lat": 43.8416962,
+    "lon": 13.0188762
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona D",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone D",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona D",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona D",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1429395168,
+  "center": {
+    "lat": 43.8429744,
+    "lon": 13.0217394
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona E",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone E",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona E",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona E",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1429395169,
+  "center": {
+    "lat": 43.8408891,
+    "lon": 13.0201427
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona F",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone F",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona F",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona F",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1429395170,
+  "center": {
+    "lat": 43.8419017,
+    "lon": 13.0208594
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona F",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone F",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona F",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona F",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1434334989,
+  "center": {
+    "lat": 43.8518694,
+    "lon": 13.0098822
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona Lido",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone Lido",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona Lido",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona Lido",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1434334990,
+  "center": {
+    "lat": 43.8508596,
+    "lon": 13.0129401
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona Lido",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone Lido",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona Lido",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona Lido",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1434334991,
+  "center": {
+    "lat": 43.8505634,
+    "lon": 13.0156175
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona Porto",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone Porto",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona Porto",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona Porto",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1434334992,
+  "center": {
+    "lat": 43.8497074,
+    "lon": 13.0152408
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona Porto",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone Porto",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona Porto",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona Porto",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1434334993,
+  "center": {
+    "lat": 43.8490487,
+    "lon": 13.0154671
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona Porto",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone Porto",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona Porto",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona Porto",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1434334994,
+  "center": {
+    "lat": 43.8496222,
+    "lon": 13.0139556
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona Lido Estiva",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone Lido Estiva",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona Lido Estiva",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona Lido Estiva",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1434334995,
+  "center": {
+    "lat": 43.8493975,
+    "lon": 13.0152541
+  },
+  "tags": {
+    "alt_name": "ZTL Fano - Sottozona Porto Estiva",
+    "alt_name:en": "Limited Traffic Zone Fano - Subzone Porto Estiva",
+    "alt_name:it": "Zona Traffico Limitato Fano - Sottozona Porto Estiva",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "fixme": "Chiedere al Comune la mappa delle ztl ecc attuale, quella nel sito è vecchiotta",
+    "name": "ZTL Fano - Sottozona Porto Estiva",
+    "source": "Comune di Fano",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "way",
+  "id": 1436760535,
+  "center": {
+    "lat": 44.4992551,
+    "lon": 11.3471361
+  },
+  "tags": {
+    "alt_name:en": "Special Limited Traffic Zone Bologna - Moline-Capo di Lucca",
+    "alt_name:it": "Zona Traffico Limitato Speciale Bologna - Moline-Capo di Lucca",
+    "author": "Comune di Bologna",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-12-08",
+    "emergency": "yes",
+    "foot": "yes",
+    "goods": "no",
+    "goods:conditional": "permit @ 06:00-10:30",
+    "motor_vehicle": "permit",
+    "name": "ZTL Bologna - ZTLS Moline-Capo di Lucca",
+    "operator": "Comune di Bologna",
+    "psv": "yes",
+    "short_name": "ZTLS Moline-Capo di Lucca",
+    "source": "Comune di Bologna",
+    "website": "https://www.comune.bologna.it/informazioni/zona-a-traffico-limitato-speciale-ztls-moline-capo-di-lucca"
+  }
+},
+{
+  "type": "way",
+  "id": 1466778087,
+  "center": {
+    "lat": 45.4915748,
+    "lon": 12.2424813
+  },
+  "tags": {
+    "highway": "unclassified",
+    "maxspeed": "0",
+    "name": "ZTL"
+  }
+},
+{
+  "type": "way",
+  "id": 1466798549,
+  "center": {
+    "lat": 45.4910922,
+    "lon": 12.2435463
+  },
+  "tags": {
+    "access": "no",
+    "area": "yes",
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Centro Mestre"
+  }
+},
+{
+  "type": "way",
+  "id": 1466804850,
+  "center": {
+    "lat": 45.4917459,
+    "lon": 12.2403936
+  },
+  "tags": {
+    "access": "no",
+    "area": "yes",
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Mestre Centro"
+  }
+},
+{
+  "type": "way",
+  "id": 1467362254,
+  "center": {
+    "lat": 45.4685501,
+    "lon": 9.1952068
+  },
+  "tags": {
+    "addr:city": "Milano",
+    "addr:postcode": "20121",
+    "area": "yes",
+    "description": "La ZTL “Quadrilatero della Moda” prevede il divieto di accesso e circolazione, dalle ore 00:00 alle ore 24:00 di tutti i giorni della settimana, a eccezione di alcune categorie di veicoli. Ultimo aggiornamento: 15/12/2025",
+    "motor_vehicle": "no",
+    "name": "ZTL: Quadrilatero della Moda",
+    "note": "Il divieto al transito nella ZTL Quadrilatero della Moda è valido per tutti i veicoli e pertanto ciclomotori e motoveicoli non possono accedere senza autorizzazione.",
+    "note:en": "The “Quadrilatero della Moda” LTZ (Limited Traffic Zone) prohibits access and circulation from 00:00 to 24:00 every day of the week, except for certain vehicle categories. Last updated: 15/12/2025 (check the regulations on the official website of the Muni",
+    "source": "https://www.comune.milano.it/servizi/mobilita/ztl-quadrilatero-della-moda",
+    "website": "https://www.comune.milano.it/"
+  }
+},
+{
+  "type": "way",
+  "id": 1467465662,
+  "center": {
+    "lat": 45.4488798,
+    "lon": 9.1737906
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "description": "La ZTL Navigli di Milano è, attiva dalle 20.00 alle ore 07.00 tutti i giorni della settimana. La ZTL Navigli di via Fumagalli è, attiva dalle 24.00 su 24.00 tutti i giorni della settimana. L'area disegnata riguarda sia le strade che le aree pedonali.",
+    "motor_vehicle": "no",
+    "name": "ZTL:Navigli",
+    "note": "Il divieto al transito nella ZTL di Milano Navigli è valido per tutti i veicoli e pertanto ciclomotori e motoveicoli non possono accedere senza autorizzazione.",
+    "note:en": "The “Navigli” LTZ (Limited Traffic Zone) in Milan is active every day from 8PM to 7AM. The “Navigli – Via Fumagalli” LTZ is active 24 hours a day, every day of the week. The mapped area includes both streets and pedestrian zones (see city of Milan website",
+    "source": "https://servizicrm.comune.milano.it/centro-supporto/KA-01121/Elenco-corsie-riservate-ZTL-a-Milano",
+    "website": "https://www.comune.milano.it/"
+  }
+},
+{
+  "type": "way",
+  "id": 1467465663,
+  "center": {
+    "lat": 45.4518067,
+    "lon": 9.1723668
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "description": "La ZTL Navigli di Milano è, attiva dalle 20.00 alle ore 07.00 tutti i giorni della settimana. La ZTL Navigli di via Fumagalli è, attiva dalle 24.00 su 24.00 tutti i giorni della settimana. L'area disegnata riguarda sia le strade che le aree pedonali.",
+    "motor_vehicle": "no",
+    "name": "ZTL:Navigli",
+    "note": "Il divieto al transito nella ZTL di Milano Navigli è valido per tutti i veicoli e pertanto ciclomotori e motoveicoli non possono accedere senza autorizzazione.",
+    "note:en": "The “Navigli” LTZ (Limited Traffic Zone) in Milan is active every day from 8PM to 7AM. The “Navigli – Via Fumagalli” LTZ is active 24 hours a day, every day of the week. The mapped area includes both streets and pedestrian zones (see city of Milan website",
+    "source": "https://servizicrm.comune.milano.it/centro-supporto/KA-01121/Elenco-corsie-riservate-ZTL-a-Milano",
+    "website": "https://www.comune.milano.it/"
+  }
+},
+{
+  "type": "way",
+  "id": 1467465664,
+  "center": {
+    "lat": 45.4487399,
+    "lon": 9.1777997
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "description": "La ZTL Navigli di Milano è, attiva dalle 20.00 alle ore 07.00 tutti i giorni della settimana. La ZTL Navigli di via Fumagalli è, attiva dalle 24.00 su 24.00 tutti i giorni della settimana. L'area disegnata riguarda sia le strade che le aree pedonali.",
+    "motor_vehicle": "no",
+    "name": "ZTL:Navigli",
+    "note": "Il divieto al transito nella ZTL di Milano Navigli è valido per tutti i veicoli e pertanto ciclomotori e motoveicoli non possono accedere senza autorizzazione.",
+    "note:en": "The “Navigli” LTZ (Limited Traffic Zone) in Milan is active every day from 8PM to 7AM. The “Navigli – Via Fumagalli” LTZ is active 24 hours a day, every day of the week. The mapped area includes both streets and pedestrian zones (see city of Milan website",
+    "source": "https://servizicrm.comune.milano.it/centro-supporto/KA-01121/Elenco-corsie-riservate-ZTL-a-Milano",
+    "website": "https://www.comune.milano.it/"
+  }
+},
+{
+  "type": "way",
+  "id": 1467471966,
+  "center": {
+    "lat": 45.4762863,
+    "lon": 9.1716676
+  },
+  "tags": {
+    "addr:city": "Milano",
+    "addr:postcode": "20135",
+    "area": "yes",
+    "description": "La ZTL Arco della pace di Milano è delimitata dal seguente perimetro di strade: via Bertano, via F. Melzi d'Eril, C.so Sempione, via Gherardini, via Canova, via Pagano. La ZTL è attiva tutti i giorni dalle ore 22 ore alle 6 di mattina.",
+    "motor_vehicle": "no",
+    "name": "ZTL: Arco della Pace",
+    "note": "Il divieto al transito nella ZTL di Milano Arco della Pace è valido per tutti i veicoli e pertanto ciclomotori e motoveicoli non possono accedere senza autorizzazione.",
+    "note:en": "The “Arco della Pace” LTZ (Limited Traffic Zone) in Milan is defined by the following streets: Via Bertano, Via F. Melzi d’Eril, Corso Sempione, Via Gherardini, Via Canova, and Via Pagano. The LTZ is active every day from 22:00 to 06:00 (check the regulat",
+    "source": "https://servizicrm.comune.milano.it/centro-supporto/KA-01121/Elenco-corsie-riservate-ZTL-a-Milano",
+    "website": "https://www.comune.milano.it/"
+  }
+},
+{
+  "type": "way",
+  "id": 1524743660,
+  "center": {
+    "lat": 45.4383804,
+    "lon": 10.6939044
+  },
+  "tags": {
+    "area": "yes",
+    "boundary": "limited_traffic_zone",
+    "motor_vehicle:conditional": "permit; no @ (00:00-06:00; 09:00-24:00)",
+    "name": "ZTL Peschiera del Garda",
+    "operator": "Polizia Locale di Peschiera del Garda",
+    "source": "Comune di Peschiera del Garda",
+    "type": "boundary",
+    "website": "https://www.comune.peschieradelgarda.vr.it/it/topics/ztl"
+  }
+},
+{
+  "type": "way",
+  "id": 1524743661,
+  "center": {
+    "lat": 45.4710104,
+    "lon": 10.5403594
+  },
+  "tags": {
+    "area": "yes",
+    "boundary": "limited_traffic_zone",
+    "goods:conditional": "destination @ (06:00-10:00; 14:00-16:00)",
+    "motor_vehicle": "permit",
+    "name": "ZTL Desenzano",
+    "operator": "Polizia Locale di Desenzano",
+    "source": "Città di Desenzano del Garda",
+    "source:url": "https://www.comune.desenzano.brescia.it/Servizi/Richiedere-permesso-di-accesso-ad-area-ZTL-residentitype=boundary"
+  }
+},
+{
+  "type": "way",
+  "id": 1524749943,
+  "center": {
+    "lat": 45.5049494,
+    "lon": 10.7331456
+  },
+  "tags": {
+    "area": "yes",
+    "boundary": "limited_traffic_zone",
+    "motor_vehicle": "permit",
+    "name": "ZTL Lazise",
+    "operator": "Polizia Locale di Lazise",
+    "source": "Comune di Lazise",
+    "type": "boundary",
+    "website": "https://www.comune.lazise.vr.it/argomento/ztl/"
+  }
+},
+{
+  "type": "way",
+  "id": 1524869600,
+  "center": {
+    "lat": 44.0595672,
+    "lon": 9.9296841
+  },
+  "tags": {
+    "access": "permit",
+    "boundary": "limited_traffic_zone",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Centro Abitato Tellaro",
+    "source": "https://www.halleyweb.com/c011016/images/traffico/REGOLAMENTO%20ZTL%20PIANO%20DEL%20TRAFFICO.PDF /--\\ FOOTER PAGE 1 / Bing Streetside"
+  }
+},
+{
+  "type": "way",
+  "id": 1524892941,
+  "center": {
+    "lat": 44.0758800,
+    "lon": 9.9162557
+  },
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "bus": "yes",
+    "disabled": "yes",
+    "disabled:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "motor_vehicle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "motorcycle": "yes",
+    "motorcycle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "name": "ZTL Via Matteotti Lerici",
+    "note": "BUS yes ONLY IF LOCAL ATC / BUS si SOLO SE LOCALE ATC",
+    "tourist_bus": "yes",
+    "tourist_bus:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)"
+  }
+},
+{
+  "type": "way",
+  "id": 1524892942,
+  "center": {
+    "lat": 44.0803792,
+    "lon": 9.9134777
+  },
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "bus": "yes",
+    "disabled": "yes",
+    "disabled:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "motor_vehicle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "motorcycle": "yes",
+    "motorcycle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "name": "ZTL Galleria Primacina Lerici",
+    "note": "BUS yes ONLY IF LOCAL ATC / BUS si SOLO SE LOCALE ATC",
+    "tourist_bus": "yes",
+    "tourist_bus:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)"
+  }
+},
+{
+  "type": "way",
+  "id": 1524892943,
+  "center": {
+    "lat": 44.0820296,
+    "lon": 9.9074102
+  },
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "bus": "yes",
+    "disabled": "yes",
+    "disabled:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "motor_vehicle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "motorcycle": "yes",
+    "motorcycle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "name": "ZTL Via Biaggini 2ª Traversa",
+    "note": "BUS yes ONLY IF LOCAL ATC / BUS si SOLO SE LOCALE ATC",
+    "tourist_bus": "yes",
+    "tourist_bus:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)"
+  }
+},
+{
+  "type": "way",
+  "id": 1524892944,
+  "center": {
+    "lat": 44.0852558,
+    "lon": 9.9014064
+  },
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "bus": "yes",
+    "disabled": "yes",
+    "disabled:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "motor_vehicle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "motorcycle": "yes",
+    "motorcycle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "name": "ZTL Via Venti Settembre Lerici",
+    "note": "BUS yes ONLY IF LOCAL ATC / BUS si SOLO SE LOCALE ATC",
+    "tourist_bus": "yes",
+    "tourist_bus:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)"
+  }
+},
+{
+  "type": "way",
+  "id": 1524892945,
+  "center": {
+    "lat": 44.0883333,
+    "lon": 9.8934936
+  },
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "bus": "yes",
+    "disabled": "yes",
+    "disabled:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "motor_vehicle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "motorcycle": "yes",
+    "motorcycle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "name": "ZTL Via Gozzano 1ª Lerici",
+    "note": "BUS yes ONLY IF LOCAL ATC / BUS si SOLO SE LOCALE ATC",
+    "tourist_bus": "yes",
+    "tourist_bus:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)"
+  }
+},
+{
+  "type": "way",
+  "id": 1524892946,
+  "center": {
+    "lat": 44.0853806,
+    "lon": 9.8952662
+  },
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ (Jun 15-Aug 31 00:00-24:00); private @ (Sep 01-Jun 14 Sa 13:00-24:00); private @ (Sep 01-Jun 14 Su,PH 00:00-24:00)",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "disabled:conditional": "private @ (Jun 15-Aug 31 00:00-24:00); private @ (Sep 01-Jun 14 Sa 13:00-24:00); private @ (Sep 01-Jun 14 Su,PH 00:00-24:00)",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "motor_vehicle:conditional": "private @ (Jun 15-Aug 31 00:00-24:00); private @ (Sep 01-Jun 14 Sa 13:00-24:00); private @ (Sep 01-Jun 14 Su,PH 00:00-24:00)",
+    "name": "ZTL Via Milano Lerici",
+    "tourist_bus": "yes",
+    "tourist_bus:conditional": "private @ (Jun 15-Aug 31 00:00-24:00); private @ (Sep 01-Jun 14 Sa 13:00-24:00); private @ (Sep 01-Jun 14 Su,PH 00:00-24:00)"
+  }
+},
+{
+  "type": "way",
+  "id": 1524892947,
+  "center": {
+    "lat": 44.0866782,
+    "lon": 9.8924043
+  },
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "bus": "yes",
+    "disabled": "yes",
+    "disabled:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "motor_vehicle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "motorcycle": "yes",
+    "motorcycle:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)",
+    "name": "ZTL Via Bagnara Lerici",
+    "note": "BUS yes ONLY IF LOCAL ATC / BUS si SOLO SE LOCALE ATC",
+    "tourist_bus": "yes",
+    "tourist_bus:conditional": "private @ (Jun 15-Aug 31 01:00-05:00,10:00-18:30)"
+  }
+},
+{
+  "type": "way",
+  "id": 1525131830,
+  "center": {
+    "lat": 44.2649488,
+    "lon": 10.0379816
+  },
+  "tags": {
+    "access": "private",
+    "area": "yes",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "foot": "yes",
+    "name": "ZTL Licciana Nardi",
+    "source": "mapillary, OSM history"
+  }
+},
+{
+  "type": "relation",
+  "id": 1018521,
+  "center": {
+    "lat": 45.3249220,
+    "lon": 8.4224498
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "fixme": "Vedere commento di questo changeset: https://www.openstreetmap.org/changeset/94506893",
+    "name": "ZTL Vercelli",
+    "type": "site"
+  }
+},
+{
+  "type": "relation",
+  "id": 1164313,
+  "center": {
+    "lat": 45.4023807,
+    "lon": 11.8725350
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "Accesso ZTL \"Comparto Duomo\"",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 1164314,
+  "center": {
+    "lat": 45.4055446,
+    "lon": 11.8686142
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "Accesso ZTL \"Comparto Duomo\"",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 1164315,
+  "center": {
+    "lat": 45.4068988,
+    "lon": 11.8683956
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "Accesso ZTL \"Comparto Duomo\"",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 1164316,
+  "center": {
+    "lat": 45.4003567,
+    "lon": 11.8784000
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "Accesso ZTL \"Comparto Businello\"",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 1164317,
+  "center": {
+    "lat": 45.4020376,
+    "lon": 11.8798404
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "Accesso ZTL \"Comparto Riviere\"",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 1164319,
+  "center": {
+    "lat": 45.4107907,
+    "lon": 11.8775839
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "Accesso ZTL \"Comparto Riviere\"",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 1164320,
+  "center": {
+    "lat": 45.4091629,
+    "lon": 11.8756279
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "Accesso ZTL \"Comparto Piazze\"",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 1529739,
+  "center": {
+    "lat": 44.8402132,
+    "lon": 11.6197186
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL C \"Ercole I D'Este\"",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 1529740,
+  "center": {
+    "lat": 44.8370375,
+    "lon": 11.6158606
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL A \"Garibaldi\"",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 1529743,
+  "center": {
+    "lat": 44.8323865,
+    "lon": 11.6226470
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL B \"Medioevale\"",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 1628168,
+  "center": {
+    "lat": 44.8389107,
+    "lon": 11.6221451
+  },
+  "tags": {
+    "name": "Strade in ZTL",
+    "type": "restriction"
+  }
+},
+{
+  "type": "relation",
+  "id": 2122456,
+  "center": {
+    "lat": 41.9048805,
+    "lon": 12.4756389
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2122458,
+  "center": {
+    "lat": 41.9103803,
+    "lon": 12.4752342
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2122467,
+  "center": {
+    "lat": 41.8930079,
+    "lon": 12.5155426
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL San Lorenzo",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2307423,
+  "center": {
+    "lat": 41.8986493,
+    "lon": 12.5149903
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL San Lorenzo",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2425951,
+  "center": {
+    "lat": 41.9046419,
+    "lon": 12.4753319
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2425962,
+  "center": {
+    "lat": 41.9017089,
+    "lon": 12.4718584
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL Centro Storico",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2459882,
+  "center": {
+    "lat": 41.9019490,
+    "lon": 12.4810615
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "car_sharing": "yes",
+    "emergency": "yes",
+    "image": "https://www.flickr.com/photos/76225195@N07/15045664091/",
+    "motorcar": "yes",
+    "motorcar:conditional": "private @ (Mo-Fr 06:30-18:00; Sa 14:00-18:00)",
+    "name": "ZTL Diurna Centro Storico",
+    "psv": "yes",
+    "taxi": "yes",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 2459883,
+  "center": {
+    "lat": 41.9066736,
+    "lon": 12.4797471
+  },
+  "tags": {
+    "alt_name": "ZTL A1",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "motor_vehicle:conditional": "private @ (Mo-Fr 06:30-19:00; Sa 10:00-19:00; PH off)",
+    "motor_vehicle:electric": "yes",
+    "name": "ZTL Tridente",
+    "old_name": "ZTL Tridentino",
+    "psv": "yes",
+    "taxi": "yes",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 2459896,
+  "center": {
+    "lat": 41.9053496,
+    "lon": 12.4851520
+  },
+  "tags": {
+    "car_sharing": "yes",
+    "disabled": "yes",
+    "emergency": "yes",
+    "motor_vehicle:conditional": "yes @ PH;no @ (fuel=diesel AND emissions <= euro_2 AND (Mo-Fr)); no @ (fuel=gasoline AND emissions <= euro_1 AND (Mo-Fr))",
+    "motor_vehicle:fuel:diesel:Euro_0:conditional": "no @ (Mo-Fr; PH off)",
+    "motor_vehicle:fuel:diesel:Euro_1:conditional": "no @ (Mo-Fr; PH off)",
+    "motor_vehicle:fuel:diesel:Euro_2:conditional": "no @ (Mo-Fr; PH off)",
+    "motor_vehicle:fuel:gasoline:Euro_0:conditional": "no @ (Mo-Fr; PH off)",
+    "motor_vehicle:fuel:gasoline:Euro_1:conditional": "no @ (Mo-Fr; PH off)",
+    "motorcycle:Euro_0": "no",
+    "motorcycle:Euro_1:conditional": "no @ (Mo-Fr; PH off)",
+    "motorcycle:conditional": "yes @ PH;no @ (emissions = euro_0); no @ (emissions = euro_1 AND Mo-Fr)",
+    "name": "ZTL Anello Ferroviario",
+    "note": "limited access depending on vehicle from Mo-Fr, except PH, http://www.06blog.it/post/46171/anello-ferroviario-roma-ztl-fascia-verde-mappa-confini-provvedimenti-e-divieti",
+    "psv": "yes",
+    "source": "https://www.comune.roma.it/PCR/resources/cms/documents/fasciaverdenew.pdf",
+    "type": "boundary",
+    "website": "https://www.comune.roma.it/PCR/resources/cms/documents/delibGC24219lug2011.pdf"
+  }
+},
+{
+  "type": "relation",
+  "id": 2461289,
+  "center": {
+    "lat": 41.8929294,
+    "lon": 12.4775116
+  },
+  "tags": {
+    "boundary": "low_emission_zone",
+    "car_sharing": "yes",
+    "name": "Fascia Verde",
+    "type": "boundary",
+    "website": "https://romamobilita.it/it/servizi/ztl/fascia-verde-anello-ferroviario"
+  }
+},
+{
+  "type": "relation",
+  "id": 2470653,
+  "center": {
+    "lat": 41.8954375,
+    "lon": 12.4656259
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2550449,
+  "center": {
+    "lat": 41.9022055,
+    "lon": 12.4955053
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL Centro Storico",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2550450,
+  "center": {
+    "lat": 41.9022013,
+    "lon": 12.4954555
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL Centro Storico",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2572441,
+  "center": {
+    "lat": 41.8917084,
+    "lon": 12.4694472
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "car_sharing": "yes",
+    "emergency": "yes",
+    "motorcar:conditional": "private @ (Mo-Sa 06:30-10:00; PH off)",
+    "name": "ZTL Diurna Trastevere",
+    "psv": "yes",
+    "taxi": "yes",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 2573006,
+  "center": {
+    "lat": 41.8963620,
+    "lon": 12.5153743
+  },
+  "tags": {
+    "area": "yes",
+    "car_sharing": "yes",
+    "emergency": "yes",
+    "motorcar:conditional": "private @ [Nov-Apr (Fr-Su 21:30-03:00); May-Jul (We-Sa 21:30-03:00); Aug off; Sep-Oct (We-Sa 21:30-03:00)]",
+    "name": "ZTL Notturna San Lorenzo",
+    "psv": "yes",
+    "taxi": "yes",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 2573007,
+  "center": {
+    "lat": 41.8796502,
+    "lon": 12.4749097
+  },
+  "tags": {
+    "area": "yes",
+    "boundary": "limited_traffic_zone",
+    "car_sharing": "yes",
+    "emergency": "yes",
+    "motorcar:conditional": "private @ (Fr 23:00-24:00; Sa 00:00-03:00,23:00-24:00; Su 00:00-03:00)",
+    "name": "ZTL Notturna Testaccio",
+    "psv": "yes",
+    "taxi": "yes",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 2573011,
+  "center": {
+    "lat": 44.6405541,
+    "lon": 10.9306096
+  },
+  "tags": {
+    "boundary": "low_emission_zone",
+    "name": "Zona Verde Modena con limitazioni alla circolazione",
+    "type": "boundary",
+    "website": "https://www.comune.modena.it/liberiamolaria/mappa"
+  }
+},
+{
+  "type": "relation",
+  "id": 2573034,
+  "center": {
+    "lat": 41.9030946,
+    "lon": 12.4802387
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "car_sharing": "yes",
+    "emergency": "yes",
+    "motorcar:conditional": "private @ (Fr 23:00-24:00; Sa 00:00-03:00,23:00-24:00; Su 00:00-03:00)",
+    "name": "ZTL Notturna Centro Storico",
+    "psv": "yes",
+    "taxi": "yes",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 2684883,
+  "center": {
+    "lat": 41.8997593,
+    "lon": 12.4657363
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL Centro Storico",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2691714,
+  "center": {
+    "lat": 41.8912027,
+    "lon": 12.4694472
+  },
+  "tags": {
+    "area": "yes",
+    "boundary": "limited_traffic_zone",
+    "car_sharing": "yes",
+    "emergency": "yes",
+    "motorcar:conditional": "private @ [Nov-Apr (Fr-Sa 21:30-03:00); May-Jul (We-Sa 21:30-03:00); Aug off; Sep-Oct (Fr-Sa 21:30-03:00)]",
+    "name": "ZTL Notturna Trastevere",
+    "psv": "yes",
+    "taxi": "yes",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 2827007,
+  "center": {
+    "lat": 41.8967404,
+    "lon": 12.5185121
+  },
+  "tags": {
+    "enforcement": "check",
+    "name": "Varco ZTL San Lorenzo",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 2981261,
+  "center": {
+    "lat": 41.9032703,
+    "lon": 12.4925789
+  },
+  "tags": {
+    "enforcement": "check",
+    "name": "Varco ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 3178455,
+  "center": {
+    "lat": 41.9055315,
+    "lon": 12.4904477
+  },
+  "tags": {
+    "check": "LEZ",
+    "enforcement": "check",
+    "name": "Varco ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 4022484,
+  "center": {
+    "lat": 45.4391528,
+    "lon": 11.0007145
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 4022490,
+  "center": {
+    "lat": 45.4396787,
+    "lon": 11.0004836
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 4022627,
+  "center": {
+    "lat": 45.4429830,
+    "lon": 11.0008492
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 4022655,
+  "center": {
+    "lat": 45.1553109,
+    "lon": 10.6940132
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 4081506,
+  "center": {
+    "lat": 43.3194237,
+    "lon": 11.3338868
+  },
+  "tags": {
+    "bicycle": "yes",
+    "bus": "yes",
+    "description": "Zona Traffico Limitato Centro Storico di Siena",
+    "emergency": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "goods": "yes",
+    "moped": "yes",
+    "motor_vehicle": "permit",
+    "motorcycle": "yes",
+    "name": "ZTL Siena",
+    "psv": "yes",
+    "taxi": "yes",
+    "type": "enforcement",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 4524809,
+  "center": {
+    "lat": 39.9042657,
+    "lon": 8.5930912
+  },
+  "tags": {
+    "disabled": "yes",
+    "emergency": "yes",
+    "enforcement": "access",
+    "goods:conditional": "destination @ (07:30-10:00,14:30-17:00)",
+    "motor_vehicle": "permit",
+    "name": "ZTL di Oristano",
+    "type": "enforcement",
+    "vehicle:conditional": "yes @ (10:00-13:00,16:00-19:30)"
+  }
+},
+{
+  "type": "relation",
+  "id": 4800929,
+  "center": {
+    "lat": 45.5840772,
+    "lon": 9.2758764
+  },
+  "tags": {
+    "bicycle": "yes",
+    "delivery:conditional": "yes @ (06:00-10:00, 14:00-16:00)",
+    "description": "Zona a traffico limitato centro storico di Monza; traffico veicolare riservato a residenti e autorizzati",
+    "emergency": "yes",
+    "foot": "yes",
+    "maxspeed": "30",
+    "motor_vehicle": "private",
+    "name": "ZTL Monza",
+    "operator": "Comune di Monza",
+    "start_date": "04-2015",
+    "surveillance": "access",
+    "type": "surveillance"
+  }
+},
+{
+  "type": "relation",
+  "id": 6422783,
+  "center": {
+    "lat": 45.1565895,
+    "lon": 10.7912147
+  },
+  "tags": {
+    "access": "permissive",
+    "enforcement": "access",
+    "name": "ZTL camera",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 6428794,
+  "center": {
+    "lat": 45.5518883,
+    "lon": 10.7183060
+  },
+  "tags": {
+    "access": "permissive",
+    "enforcement": "access",
+    "name": "ZTL",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 6908438,
+  "center": {
+    "lat": 45.5215878,
+    "lon": 9.5922086
+  },
+  "tags": {
+    "bicycle": "yes",
+    "delivery": "no",
+    "delivery:conditional": "yes @ (Mo-Sa 08:00-10:00,13:00-16:00)",
+    "disabled": "permit",
+    "emergency": "yes",
+    "maxweightrating:hgv": "3.5 t",
+    "motor_vehicle": "permit",
+    "motor_vehicle:conditional": "yes @ (Mo-Fr 00:00-10:00,20:00-24:00)",
+    "name": "ZTL Treviglio",
+    "type": "site"
+  }
+},
+{
+  "type": "relation",
+  "id": 8148559,
+  "center": {
+    "lat": 45.5249326,
+    "lon": 9.3306531
+  },
+  "tags": {
+    "name": "ZTL",
+    "type": "restriction"
+  }
+},
+{
+  "type": "relation",
+  "id": 9633879,
+  "center": {
+    "lat": 45.4668421,
+    "lon": 9.1678512
+  },
+  "tags": {
+    "alt_name": "ZTL Milano - Area B",
+    "alt_name:en": "Limited Traffic Zone Milan - Area B",
+    "alt_name:it": "Zona Traffico Limitato Milano - Area B",
+    "boundary": "low_emission_zone",
+    "description": "Milano Area B, Zona a Traffico Limitato (ZTL)",
+    "fee": "no",
+    "motorcar:conditional": "no @ (fuel = diesel AND emissions < euro_6; fuel=petrol AND emissions < euro_3; fuel=diesel+lpg AND emissions < euro_4; fuel=diesel+methan AND emissions < euro_4)",
+    "motorcycle:conditional": "no @ (emissions < euro_2)",
+    "name": "Area B",
+    "opening_hours": "Mo-Fr 7:30-19:30; PH off",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 12307538,
+  "center": {
+    "lat": 41.0734185,
+    "lon": 14.3329906
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Città di Caserta",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 14400464,
+  "center": {
+    "lat": 40.9229588,
+    "lon": 9.5001178
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Zona A",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14400465,
+  "center": {
+    "lat": 40.9239446,
+    "lon": 9.5023239
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Zona C",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14400850,
+  "center": {
+    "lat": 40.5582979,
+    "lon": 8.3136147
+  },
+  "tags": {
+    "alt_name": "ZTL Alghero - Centro Storico",
+    "alt_name:en": "Limited Traffic Zone Alghero - Historic Centre",
+    "alt_name:it": "Zona Traffico Limitato Alghero - Centro Storico",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-26",
+    "disabled": "yes",
+    "emergency": "yes",
+    "landuse": "residential",
+    "name": "ZTL Centro Storico",
+    "source": "Comune di Alghero",
+    "source:url": "https://comune.alghero.ss.it/.galleries/doc-documenti/ZTL2019_Ordinanza-dirigenziale-n.-4-del-07.01.2019.pdf",
+    "taxi": "yes",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (Mo-Su 00:00-08:00, 10:30-14:30, 16:00-24:00)"
+  }
+},
+{
+  "type": "relation",
+  "id": 14400927,
+  "center": {
+    "lat": 40.9234741,
+    "lon": 9.5017999
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Zona B",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14402156,
+  "center": {
+    "lat": 39.2148901,
+    "lon": 9.1139415
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Marina",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14402165,
+  "center": {
+    "lat": 39.2184845,
+    "lon": 9.1154550
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Castello",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14404159,
+  "center": {
+    "lat": 39.2003908,
+    "lon": 9.1619570
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Poetto",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14407819,
+  "center": {
+    "lat": 39.0112508,
+    "lon": 9.0023025
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL 2 Centro",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14407820,
+  "center": {
+    "lat": 39.0102643,
+    "lon": 9.0018475
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL 1 Esterna",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14411935,
+  "center": {
+    "lat": 40.7268032,
+    "lon": 8.5614056
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Sassari",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14421298,
+  "center": {
+    "lat": 37.5039871,
+    "lon": 15.0894384
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Centro Storico",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14425414,
+  "center": {
+    "lat": 37.0601316,
+    "lon": 15.2941825
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "motor_vehicle:conditional": "permit @ (Mo-Sa 00:00-02:00, 11:00-15:30, 17:00-24:00; Su, PH 00:00-02:00,10:00-24:00)",
+    "name": "ZTL Siracusa",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14432202,
+  "center": {
+    "lat": 37.7996689,
+    "lon": 12.4349577
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Marsala",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14435103,
+  "center": {
+    "lat": 36.7877882,
+    "lon": 14.4937388
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Punta Secca",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14436012,
+  "center": {
+    "lat": 38.1152981,
+    "lon": 13.3635206
+  },
+  "tags": {
+    "alt_name": "ZTL Palermo - Centrale",
+    "alt_name:en": "Limited Traffic Zone Palermo - Central",
+    "alt_name:it": "Zona Traffico Limitato Palermo - Centrale",
+    "boundary": "limited_traffic_zone",
+    "contact:email": "ztlcentrale@amat.pa.it",
+    "name": "ZTL Centrale",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (Mo-Fr 08:00-20:00; Fr-Sa 23:00-24:00; Sa 00:00-06:00; Su 00:00-06:00)",
+    "website": "https://ztl.comune.palermo.it/"
+  }
+},
+{
+  "type": "relation",
+  "id": 16178726,
+  "center": {
+    "lat": 43.2308323,
+    "lon": 11.4218516
+  },
+  "tags": {
+    "bus": "yes",
+    "emergency": "yes",
+    "enforcement": "access",
+    "motor_vehicle": "permit",
+    "name": "ZTL Monteroni d'Arbia",
+    "psv": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16563809,
+  "center": {
+    "lat": 43.2129836,
+    "lon": 11.7375339
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Sinalunga",
+    "restriction": "enforcement",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16603933,
+  "center": {
+    "lat": 43.0592884,
+    "lon": 11.6043887
+  },
+  "tags": {
+    "bicycle": "yes",
+    "bus": "no",
+    "disabled": "permit",
+    "enforcement": "access",
+    "foot": "yes",
+    "hgv": "no",
+    "maxheight": "2.9",
+    "motor_vehicle": "permit",
+    "name": "ZTL San Quirico d'Orcia",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16606291,
+  "center": {
+    "lat": 43.1385559,
+    "lon": 11.4815008
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Buonconvento",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16606292,
+  "center": {
+    "lat": 43.2305890,
+    "lon": 11.4212289
+  },
+  "tags": {
+    "bicycle": "yes",
+    "dog": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "no",
+    "motor_vehicle:conditional": "permit @ (Sa-Su 10:00-13:00)",
+    "name": "ZTL Monteroni d'Arbia - Bike Point",
+    "taxi": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16607489,
+  "center": {
+    "lat": 43.0768923,
+    "lon": 11.6788736
+  },
+  "tags": {
+    "bicycle": "yes",
+    "disabled": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "goods": "yes",
+    "goods:conditional": "permit @ (07:00-11:00)",
+    "maxheight": "2.5",
+    "maxweight": "2.5",
+    "motor_vehicle": "permit",
+    "name": "ZTL Pienza",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16608772,
+  "center": {
+    "lat": 43.0681016,
+    "lon": 11.7257042
+  },
+  "tags": {
+    "bicycle": "yes",
+    "disabled": "permit",
+    "enforcement": "access",
+    "foot": "yes",
+    "goods": "permit",
+    "motor_vehicle": "permit",
+    "name": "ZTL Monticchiello",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16609325,
+  "center": {
+    "lat": 43.0586893,
+    "lon": 11.8311219
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Chianciano",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16622520,
+  "center": {
+    "lat": 43.2871696,
+    "lon": 11.6027486
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Rapolano Terme",
+    "phone": "+39 348 0179690",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16677074,
+  "center": {
+    "lat": 43.2354428,
+    "lon": 11.5587384
+  },
+  "tags": {
+    "bicycle": "yes",
+    "emergency": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "motor_vehicle:conditional": "yes @ (May 1-Sep 30 10:00-15:00,16:00-18:00; Oct 1-Apr 30 10:00-18:00)",
+    "name": "ZTL Asciano",
+    "psv": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16699219,
+  "center": {
+    "lat": 43.1669477,
+    "lon": 11.7720420
+  },
+  "tags": {
+    "bicycle": "yes",
+    "disabled": "yes",
+    "disabled_vehicle": "yes",
+    "emergency": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Torrita di Siena",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16760918,
+  "center": {
+    "lat": 43.0032844,
+    "lon": 11.9563999
+  },
+  "tags": {
+    "bicycle": "permit",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Chiusi Scalo",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 16915882,
+  "center": {
+    "lat": 42.8966061,
+    "lon": 11.7687624
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Radicofani",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17083387,
+  "center": {
+    "lat": 43.0580477,
+    "lon": 11.4905631
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Montalcino",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17139028,
+  "center": {
+    "lat": 43.6881011,
+    "lon": 7.2518674
+  },
+  "tags": {
+    "access:note": "crit'air>=4; hgv @ crit'air>=3",
+    "boundary": "low_emission_zone",
+    "name": "Zone à Faibles Emissions",
+    "ref": "200030195-ZFE-001;200030195-ZFE-002;200030195-ZFE-003",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 17173016,
+  "center": {
+    "lat": 43.3455808,
+    "lon": 11.5030050
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private;permit",
+    "name": "ZTL Castelnuovo Berardenga",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17194582,
+  "center": {
+    "lat": 42.8827162,
+    "lon": 11.6758075
+  },
+  "tags": {
+    "bicycle": "yes",
+    "disabled": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Abbadia San Salvatore",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17242000,
+  "center": {
+    "lat": 43.0167123,
+    "lon": 11.9473465
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Chiusi",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17283315,
+  "center": {
+    "lat": 42.9334170,
+    "lon": 11.6380544
+  },
+  "tags": {
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Vivo d'Orcia",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17439875,
+  "center": {
+    "lat": 42.9950824,
+    "lon": 11.5165371
+  },
+  "tags": {
+    "bicycle": "yes",
+    "bus": "no",
+    "enforcement": "access",
+    "foot": "yes",
+    "hgv": "no",
+    "moped": "private",
+    "motor_vehicle": "private",
+    "motorcar": "private",
+    "motorcycle": "private",
+    "name": "ZTL Castelnuovo dell'Abate",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17515022,
+  "center": {
+    "lat": 43.3876870,
+    "lon": 11.1950788
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Abbadia Isola",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17566808,
+  "center": {
+    "lat": 43.3795800,
+    "lon": 11.1719026
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Strove",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17667360,
+  "center": {
+    "lat": 43.4226967,
+    "lon": 11.1243679
+  },
+  "tags": {
+    "bicycle": "yes",
+    "disabled": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Colle Bassa",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17693774,
+  "center": {
+    "lat": 43.4221201,
+    "lon": 11.1181719
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Colle Alta",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17777177,
+  "center": {
+    "lat": 43.1838297,
+    "lon": 11.3571996
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "customers",
+    "name": "ZTL Crevole",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 17969240,
+  "center": {
+    "lat": 42.9915044,
+    "lon": 11.8132081
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "hgv": "permit",
+    "motor_vehicle": "private",
+    "name": "ZTL Castiglioncello del Trinoro",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18052102,
+  "center": {
+    "lat": 42.9461844,
+    "lon": 11.6686505
+  },
+  "tags": {
+    "bicycle": "yes",
+    "disabled": "yes",
+    "emergency": "yes",
+    "enforcement": "access",
+    "moped": "private",
+    "motor_vehicle": "private",
+    "motorcar": "private",
+    "motorcycle": "private",
+    "name": "ZTL Campiglia d'Orcia",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18092918,
+  "center": {
+    "lat": 43.4690861,
+    "lon": 11.1548304
+  },
+  "tags": {
+    "boundary": "low_emission_zone",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 18098720,
+  "center": {
+    "lat": 43.1761929,
+    "lon": 11.3857275
+  },
+  "tags": {
+    "bicycle": "yes",
+    "disabled": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "long_name": "ZTL Lupompesi di Murlo",
+    "motor_vehicle": "private",
+    "name": "ZTL Lupompesi",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18098721,
+  "center": {
+    "lat": 42.8865280,
+    "lon": 11.9160445
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Fighine",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18111528,
+  "center": {
+    "lat": 43.0937086,
+    "lon": 11.7821780
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Montepulciano",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18111529,
+  "center": {
+    "lat": 43.1406917,
+    "lon": 11.6644664
+  },
+  "tags": {
+    "bicycle": "yes",
+    "disabled": "yes",
+    "emergency": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Castelmuzio",
+    "psv": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18136768,
+  "center": {
+    "lat": 42.9901860,
+    "lon": 11.8687399
+  },
+  "tags": {
+    "bicycle": "yes",
+    "disabled": "yes",
+    "emergency": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Sarteano",
+    "police": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18136769,
+  "center": {
+    "lat": 42.9767305,
+    "lon": 11.7422259
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Contignano",
+    "police": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18136770,
+  "center": {
+    "lat": 43.0060127,
+    "lon": 11.6159159
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Castiglione d'Orcia",
+    "police": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18136771,
+  "center": {
+    "lat": 43.0101953,
+    "lon": 11.6140505
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Rocca d'Orcia",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18136772,
+  "center": {
+    "lat": 42.9938337,
+    "lon": 11.4605273
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Sant'Angelo in Colle",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18144561,
+  "center": {
+    "lat": 43.4680579,
+    "lon": 11.1464935
+  },
+  "tags": {
+    "bicycle": "yes",
+    "emergency": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Poggibonsi",
+    "police": "yes",
+    "psv": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18162925,
+  "center": {
+    "lat": 43.4665335,
+    "lon": 11.1458280
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "motor_vehicle:conditional": "no @ (14:00-20:00)",
+    "name": "ZTL Poggibonsi Diurna",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18209830,
+  "center": {
+    "lat": 42.9630574,
+    "lon": 11.9018848
+  },
+  "tags": {
+    "disabled": "yes",
+    "enforcement": "access",
+    "motor_vehicle": "permit",
+    "name": "ZTL Cetona",
+    "police": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18209859,
+  "center": {
+    "lat": 43.1609317,
+    "lon": 11.3881138
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Murlo",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18246947,
+  "center": {
+    "lat": 43.0159905,
+    "lon": 11.9481947
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "motor_vehicle:conditional": "yes @ (Mo-Sa 20:00-23:59); yes @ (Su 13:00-23:59)",
+    "name": "ZTL Chiusi Diurna",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18430861,
+  "center": {
+    "lat": 42.8713759,
+    "lon": 11.8752904
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL San Casciano dei Bagni",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18531283,
+  "center": {
+    "lat": 46.1896328,
+    "lon": 6.2472500
+  },
+  "tags": {
+    "access:note": "crit'air>=5",
+    "boundary": "low_emission_zone",
+    "ref": "200011773-ZFE-001",
+    "source": "https://www.annemasse-agglo.fr/sites/default/files/actes-administratifs/CC_2024_0094.pdf",
+    "start_date": "2025-01-01",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 18531643,
+  "center": {
+    "lat": 45.9033207,
+    "lon": 6.1324421
+  },
+  "tags": {
+    "access:note": "crit'air>=5",
+    "boundary": "low_emission_zone",
+    "source": "https://www.grandannecy.fr/zfem/pourquoi-une-zfe-m-dans-le-grand-annecy;https://www.grandannecy.fr/zfem/la-zfe-m-en-pratique",
+    "start_date": "2025-01-01",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 18646687,
+  "center": {
+    "lat": 43.1473910,
+    "lon": 11.2715452
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL San Lorenzo a Merse",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18694903,
+  "center": {
+    "lat": 43.1262123,
+    "lon": 11.2734217
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "private",
+    "name": "ZTL Castello di Tocchi",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 18951380,
+  "center": {
+    "lat": 43.7749857,
+    "lon": 11.2535953
+  },
+  "tags": {
+    "alt_name": "ZTL Firenze - Settore B",
+    "alt_name:en": "Limited Traffic Zone Florence - Sector B",
+    "alt_name:it": "Zona Traffico Limitato Firenze - Settore B",
+    "author": "Comune di Firenze - Direzione Infrastrutture di Viabilità e Mobilità",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Settore B",
+    "source": "Comune di Firenze",
+    "source:date": "2011-10-17",
+    "source:url": "https://dati.toscana.it/dataset/9257a75e-3af3-4845-b37d-1540be29115a",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (Mo-Fr 07:30-20:00; Sa 07:00-16:00; Su,PH)"
+  }
+},
+{
+  "type": "relation",
+  "id": 18951381,
+  "center": {
+    "lat": 43.7721645,
+    "lon": 11.2551021
+  },
+  "tags": {
+    "alt_name": "ZTL Firenze - Settore A",
+    "alt_name:en": "Limited Traffic Zone Florence - Sector A",
+    "alt_name:it": "Zona Traffico Limitato Firenze - Settore A",
+    "author": "Comune di Firenze - Direzione Infrastrutture di Viabilità e Mobilità",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Settore A",
+    "source": "Comune di Firenze",
+    "source:date": "2011-10-17",
+    "source:url": "https://dati.toscana.it/dataset/9257a75e-3af3-4845-b37d-1540be29115a",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (Mo-Fr 07:30-20:00; Sa 07:00-16:00; Su,PH)"
+  }
+},
+{
+  "type": "relation",
+  "id": 18951382,
+  "center": {
+    "lat": 43.7659183,
+    "lon": 11.2487486
+  },
+  "tags": {
+    "alt_name": "ZTL Firenze - Settore O",
+    "alt_name:en": "Limited Traffic Zone Florence - Sector O",
+    "alt_name:it": "Zona Traffico Limitato Firenze - Settore O",
+    "author": "Comune di Firenze - Direzione Infrastrutture di Viabilità e Mobilità",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Settore O",
+    "source": "Comune di Firenze",
+    "source:date": "2011-10-17",
+    "source:url": "https://dati.toscana.it/dataset/9257a75e-3af3-4845-b37d-1540be29115a",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (Mo-Fr 07:30-20:00; Sa 07:00-16:00; Su,PH)"
+  }
+},
+{
+  "type": "relation",
+  "id": 18957554,
+  "center": {
+    "lat": 43.9332744,
+    "lon": 10.9155557
+  },
+  "tags": {
+    "alt_name": "ZTL Pistoia",
+    "alt_name:en": "Limited Traffic Zone Pistoia",
+    "alt_name:it": "Zona Traffico Limitato Pistoia",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Centro Storico",
+    "source": "Comune di Pistoia",
+    "taxi": "yes",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 18957600,
+  "center": {
+    "lat": 45.4664757,
+    "lon": 9.1855743
+  },
+  "tags": {
+    "alt_name": "ZTL Milano - Area C",
+    "alt_name:en": "Limited Traffic Zone Milan - Area C",
+    "alt_name:it": "Zona Traffico Limitato Milano - Area C",
+    "boundary": "low_emission_zone",
+    "description": "Milano Area C, ZTL, Zona a Traffico Limitato, Zona a Pedaggio,",
+    "motor_vehicle:electric": "yes",
+    "motorcar:conditional": "no @ (fuel = diesel AND emissions < euro_6; fuel=petrol AND emissions < euro_4; fuel=diesel+lpg AND emissions < euro_4; fuel=diesel+methan AND emissions < euro_4)",
+    "motorcycle:conditional": "no @ (emissions < euro_3)",
+    "name": "Area C",
+    "toll:motorcar:conditional": "yes @ (Mo-Fr 7:30-19:30; PH off)",
+    "toll:motorcycle": "no",
+    "toll:psv": "no",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19152919,
+  "center": {
+    "lat": 45.4055904,
+    "lon": 11.8759591
+  },
+  "tags": {
+    "alt_name": "ZTL Padova",
+    "alt_name:en": "Limited Traffic Zone Padova",
+    "alt_name:it": "Zona Traffico Limitato Padova",
+    "author": "Comune di Padova - Settore Mobilità",
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Zona A e B",
+    "type": "boundary",
+    "website": "https://www.comune.padova.it/zona-traffico-limitato-ztl-centro-storico"
+  }
+},
+{
+  "type": "relation",
+  "id": 19152960,
+  "center": {
+    "lat": 45.0688483,
+    "lon": 7.6834785
+  },
+  "tags": {
+    "alt_name": "ZTL Torino - Centrale",
+    "alt_name:en": "Limited Traffic Zone Turin - Central",
+    "alt_name:it": "Zona Traffico Limitato Torino - Centrale",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "motor_vehicle": "permit",
+    "motor_vehicle:conditional": "yes @ (Mo-Fr 00:00-07:30,10:30-24:00; Sa-Su,PH 00:00-24:00)",
+    "motorcycle": "yes",
+    "name": "ZTL Centrale",
+    "psv": "yes",
+    "type": "boundary",
+    "website": "https://www.comune.torino.it/trasporti/ztl/"
+  }
+},
+{
+  "type": "relation",
+  "id": 19160409,
+  "center": {
+    "lat": 43.8838576,
+    "lon": 10.7718927
+  },
+  "tags": {
+    "alt_name": "ZTL Montecatini Terme",
+    "alt_name:en": "Limited Traffic Zone Montecatini",
+    "alt_name:it": "Zona Traffico Limitato Montecatini",
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Centro",
+    "note": "tracciata sulla base di quanto contenuto nell'ordinanza comunale n. 419 del 12/12/2019",
+    "type": "boundary",
+    "website": "https://www.comune.montecatini-terme.pt.it/it/topics/ztl"
+  }
+},
+{
+  "type": "relation",
+  "id": 19160453,
+  "center": {
+    "lat": 43.8810872,
+    "lon": 11.0981080
+  },
+  "tags": {
+    "alt_name": "ZTL Prato - Zona A",
+    "alt_name:en": "Limited Traffic Zone Prato - Zone A",
+    "alt_name:it": "Zona Traffico Limitato Prato - Zona A",
+    "boundary": "limited_traffic_zone",
+    "charge": "€8.00/day;€3.00/2h",
+    "check_date": "2025-05-22",
+    "emergency": "yes",
+    "fee": "yes",
+    "maxspeed": "10",
+    "name": "ZTL Zona A",
+    "note": "0-24h",
+    "source": "Comune di Prato",
+    "source:url": "https://mappe.comune.prato.it/mappebinj/",
+    "type": "boundary",
+    "vehicle": "permit",
+    "website": "https://www.comune.prato.it/it/muoversi/ztl-ztc/ztl-a/pagina358.html"
+  }
+},
+{
+  "type": "relation",
+  "id": 19160454,
+  "center": {
+    "lat": 43.8810416,
+    "lon": 11.0958579
+  },
+  "tags": {
+    "alt_name": "ZTL Prato - Zona B",
+    "alt_name:en": "Limited Traffic Zone Prato - Zone B",
+    "alt_name:it": "Zona Traffico Limitato Prato - Zona B",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-05-22",
+    "name": "ZTL Zona B",
+    "source": "Comune di Prato",
+    "source:url": "https://mappe.comune.prato.it/mappebinj/",
+    "type": "boundary",
+    "vehicle": "permit",
+    "vehicle:conditional": "yes @ (00:00-07:30, 18:30-24:00)",
+    "website": "https://www.comune.prato.it/it/muoversi/ztl-ztc/ztl-b/pagina361.html"
+  }
+},
+{
+  "type": "relation",
+  "id": 19164209,
+  "center": {
+    "lat": 44.4943118,
+    "lon": 11.3429203
+  },
+  "tags": {
+    "alt_name:en": "Limited Traffic Zone Bologna - Historic Center",
+    "alt_name:it": "Zona Traffico Limitato Bologna - Centro Storico",
+    "author": "Comune di Bologna",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-12-08",
+    "emergency": "yes",
+    "moped": "yes",
+    "motor_vehicle": "permit",
+    "motor_vehicle:conditional": "yes @ 20:00-07:00",
+    "motorcycle": "yes",
+    "name": "ZTL Bologna - Centro Storico",
+    "operator": "Comune di Bologna",
+    "psv": "yes",
+    "short_name": "ZTL Centro Storico",
+    "source": "Comune di Bologna",
+    "type": "boundary",
+    "website": "https://www.comune.bologna.it/informazioni/zona-traffico-limitato-ztl"
+  }
+},
+{
+  "type": "relation",
+  "id": 19164262,
+  "center": {
+    "lat": 45.3627075,
+    "lon": 9.6874206
+  },
+  "tags": {
+    "alt_name": "ZLT Crema - Centro Storico",
+    "alt_name:en": "Limited Traffic Zone Crema - Historic Centre",
+    "alt_name:it": "Zona Traffico Limitato Crema - Centro Storico",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-05-23",
+    "emergency": "yes",
+    "name": "ZTL Centro Storico",
+    "source": "Comune di Crema",
+    "start_date": "2019-12-01",
+    "type": "boundary",
+    "vehicle": "permit",
+    "website": "https://www.comune.crema.cr.it/permessi-ztl-invalidi/ztl-crema-tutto-quel-che-ce-sapere-perimetro-regolamento-autorizzazioni"
+  }
+},
+{
+  "type": "relation",
+  "id": 19164563,
+  "center": {
+    "lat": 40.7984559,
+    "lon": 14.1911954
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Marechiaro",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19164564,
+  "center": {
+    "lat": 40.8348309,
+    "lon": 14.2402962
+  },
+  "tags": {
+    "name": "ZTL Belledonne - Martiri - Poerio",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19164565,
+  "center": {
+    "lat": 40.8490237,
+    "lon": 14.2455623
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Tarsia - Pignasecca - Dante",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19164566,
+  "center": {
+    "lat": 40.8492703,
+    "lon": 14.2566379
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Centro Antico",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19164567,
+  "center": {
+    "lat": 40.8350477,
+    "lon": 14.2433362
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "ZTL Morelli - Filangieri - Mille",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19186663,
+  "center": {
+    "lat": 46.0685344,
+    "lon": 11.1227826
+  },
+  "tags": {
+    "alt_name": "ZTL Trento",
+    "alt_name:en": "Limited Traffic Zone Trento",
+    "alt_name:it": "Zona Traffico Limitato Trento",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Centro Storico",
+    "source": "Comune di Trento",
+    "source:website": "http://www.comune.trento.it/Aree-tematiche/Cartografia/Download/Zona-a-traffico-limitato",
+    "taxi": "yes",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19205738,
+  "center": {
+    "lat": 43.7753122,
+    "lon": 11.2453932
+  },
+  "tags": {
+    "alt_name": "ZTL Firenze - Scudo Verde",
+    "alt_name:en": "Limited Traffic Zone Florence - Green Shield",
+    "alt_name:it": "Zona Traffico Limitato Firenze - Scudo Verde",
+    "boundary": "low_emission_zone",
+    "check_date": "2025-06-03",
+    "contact:email": "sit@cittametropolitana.fi.it",
+    "description": "Zona a Basse Emissioni - Divieto di accesso a:\n- Ciclomotori, Motocicli e Autovetture Euro 0 e Euro 1;\n- Autoveicoli merci Euro 0 diesel e benzina;\n- Autoveicoli per uso speciale Euro 0 diesel e benzina",
+    "name": "ZTL Scudo Verde",
+    "note": "- Tracciato sulla base del dataset PUMS convertito da Monte Mario:\n- Corretto percorso originario passante su edifici, non integrati nodi superflui;",
+    "source": "Comune di Firenze",
+    "source:url": "https://geodati.gov.it/geoportale/visualizzazione-metadati/scheda-metadati/?uuid=cmfi:1fa4a141-9859-4544-adcd-71a2ff92b651",
+    "source_ref:url": "http://pubblicazioni.cittametropolitana.fi.it/geoserver/pian_pums_2021/pums_progetto_scudo-verde_area/wms?request=getCapabilities&service=WMS&version=1.3.0",
+    "start_date": "2025-04-01",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19298234,
+  "center": {
+    "lat": 43.0282201,
+    "lon": 11.6179841
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Bagno Vignoni",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353106,
+  "center": {
+    "lat": 44.4994817,
+    "lon": 11.3386628
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Marconi",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353107,
+  "center": {
+    "lat": 44.4988555,
+    "lon": 11.3379732
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Riva di Reno",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353108,
+  "center": {
+    "lat": 44.4945358,
+    "lon": 11.3292059
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Porta Sant'Isaia",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353109,
+  "center": {
+    "lat": 44.4903317,
+    "lon": 11.3308525
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Porta Saragozza",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353110,
+  "center": {
+    "lat": 44.4888730,
+    "lon": 11.3378960
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Via Bocca di Lupo",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353111,
+  "center": {
+    "lat": 44.4887890,
+    "lon": 11.3401810
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Via d'Azeglio",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353112,
+  "center": {
+    "lat": 44.4876743,
+    "lon": 11.3443584
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Tribunale",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353113,
+  "center": {
+    "lat": 44.4862164,
+    "lon": 11.3463918
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Via Chiudare",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353114,
+  "center": {
+    "lat": 44.4854940,
+    "lon": 11.3490895
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Via degli Angeli",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353115,
+  "center": {
+    "lat": 44.4871703,
+    "lon": 11.3531055
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Santo Stefano",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353116,
+  "center": {
+    "lat": 44.4940346,
+    "lon": 11.3561666
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Porta San Vitale",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353117,
+  "center": {
+    "lat": 44.4992573,
+    "lon": 11.3466620
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Alessandrini",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353118,
+  "center": {
+    "lat": 44.5005626,
+    "lon": 11.3479182
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Capo di Lucca direzione viale",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353119,
+  "center": {
+    "lat": 44.5002215,
+    "lon": 11.3491620
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Borgo di San Pietro direzione viale",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353120,
+  "center": {
+    "lat": 44.5016439,
+    "lon": 11.3501699
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Borgo di San Pietro direzione centro",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353121,
+  "center": {
+    "lat": 44.5021723,
+    "lon": 11.3487296
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Capo di Lucca direzione centro",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353122,
+  "center": {
+    "lat": 44.5016108,
+    "lon": 11.3521957
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Varco Mascarella",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19353131,
+  "center": {
+    "lat": 44.4951257,
+    "lon": 11.3364936
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTLS Pratello varco Piazza San Francesco",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19382666,
+  "center": {
+    "lat": 43.0509726,
+    "lon": 11.9567365
+  },
+  "tags": {
+    "bicycle": "yes",
+    "enforcement": "access",
+    "foot": "yes",
+    "motor_vehicle": "permit",
+    "name": "ZTL Lago di Chiusi",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19411642,
+  "center": {
+    "lat": 43.5530517,
+    "lon": 10.9125648
+  },
+  "tags": {
+    "alt_name": "ZTL Montaione - Centro Storico",
+    "alt_name:en": "Limited Traffic Zone Montaione - Historic Centre",
+    "alt_name:it": "Zona Traffico Limitato Montaione - Centro Storico",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-07-31",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Centro Storico",
+    "source": "Comune di Montaione",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19411716,
+  "center": {
+    "lat": 45.5676316,
+    "lon": 9.9983387
+  },
+  "tags": {
+    "alt_name": "ZTL Rovato - Centro Storico",
+    "alt_name:en": "Limited Traffic Zone Rovato - Historic Centre",
+    "alt_name:it": "Zona Traffico Limitato Rovato - Centro Storico",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Centro Storico",
+    "operator": "Polizia Locale di Rovato",
+    "source": "Comune di Rovato",
+    "source:url": "https://www.comune.rovato.bs.it/novita/avvisi/avvio-ztl-centro-storico-di-rovato/",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "yes @ (Mo-Sa 05:00-20:00)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19411778,
+  "center": {
+    "lat": 45.3538210,
+    "lon": 10.7345911
+  },
+  "tags": {
+    "alt_name": "ZTL Valeggio sul Mincio - Centro Storico",
+    "alt_name:en": "Limited Traffic Zone Valeggio sul Mincio - Centro Storico",
+    "alt_name:it": "Zona Traffico Limitato Valeggio sul Mincio - Centro Storico",
+    "author": "Comune di Firenze - Direzione Infrastrutture di Viabilità e Mobilità",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-07-31",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Centro Storico",
+    "source": "Comune di Valeggio sul Mincio",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19411822,
+  "center": {
+    "lat": 45.4207653,
+    "lon": 11.2489791
+  },
+  "tags": {
+    "alt_name": "ZTL Soave - Centro Storico",
+    "alt_name:en": "Limited Traffic Zone Soave - Historic Centre",
+    "alt_name:it": "Zona Traffico Limitato Soave - Centro Storico",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-07-31",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Centro Storico",
+    "source": "Comune di Soave",
+    "source:url": "https://sac4.halleysac.it/c023081/zf/index.php/servizi-aggiuntivi/index/index/idtesto/109",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19456915,
+  "center": {
+    "lat": 45.4972512,
+    "lon": 10.6049718
+  },
+  "tags": {
+    "alt_name": "ZTL Sirmione",
+    "alt_name:en": "Limited Traffic Zone Sirmione",
+    "alt_name:it": "Zona Traffico Limitato Sirmione",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-13",
+    "name": "ZTL Sirmione",
+    "operator": "Polizia Locale di Sirmione",
+    "source": "Comune di Sirmione",
+    "source:url": "https://www.comune.sirmione.bs.it/it/documenti_pubblici/regolamentazione-della-ztl#ufficio-responsabile-del-documento",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19456993,
+  "center": {
+    "lat": 43.5648985,
+    "lon": 11.5302845
+  },
+  "tags": {
+    "alt_name": "ZTL San Giovanni Valdarno - Area A",
+    "alt_name:en": "Limited Traffic Zone San Giovanni Valdarno - Area A",
+    "alt_name:it": "Zona Traffico Limitato San Giovanni Valdarno - Area A",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-13",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Area A",
+    "operator": "Polizia Municipale di San Giovanni Valdarno",
+    "source": "Comune di San Giovanni Valdarno",
+    "source:image": "https://mycity.s3.sbg.io.cloud.ovh.net/4260930/ztl.jpg",
+    "source:url": "https://www.comune.san-giovanni-valdarno.ar.it/documenti/2562266/mappa-ztl#description",
+    "type": "boundary",
+    "vehicle": "permit",
+    "vehicle:conditional": "yes @ (Lu-Fr 06:00-09:00)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19456994,
+  "center": {
+    "lat": 43.5649273,
+    "lon": 11.5301756
+  },
+  "tags": {
+    "alt_name": "ZTL San Giovanni Valdarno - Area B",
+    "alt_name:en": "Limited Traffic Zone San Giovanni Valdarno - Area B",
+    "alt_name:it": "Zona Traffico Limitato San Giovanni Valdarno - Area B",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-13",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Area B",
+    "operator": "Polizia Municipale di San Giovanni Valdarno",
+    "source": "Comune di San Giovanni Valdarno",
+    "source:image": "https://mycity.s3.sbg.io.cloud.ovh.net/4260930/ztl.jpg",
+    "source:url": "https://www.comune.san-giovanni-valdarno.ar.it/documenti/2562266/mappa-ztl#description",
+    "type": "boundary",
+    "vehicle": "permit",
+    "vehicle:conditional": "yes @ (Lu-Fr 06:00-09:00)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19457325,
+  "center": {
+    "lat": 44.7985811,
+    "lon": 10.3309510
+  },
+  "tags": {
+    "alt_name": "ZTL Parma - Zona 2",
+    "alt_name:en": "Limited Traffic Zone Parma - Zona 2",
+    "alt_name:it": "Zona Traffico Limitato Parma - Zona 2",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-13",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Zona 2",
+    "operator": "Polizia Locale di Parma",
+    "source": "Comune di Parma",
+    "taxi": "yes",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (07:30-19:30)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19457326,
+  "center": {
+    "lat": 44.8093433,
+    "lon": 10.3276140
+  },
+  "tags": {
+    "alt_name": "ZTL Parma - Stazione",
+    "alt_name:en": "Limited Traffic Zone Parma - Stazione",
+    "alt_name:it": "Zona Traffico Limitato Parma - Stazione",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-13",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Stazione",
+    "operator": "Polizia Locale di Parma",
+    "source": "Comune di Parma",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19457327,
+  "center": {
+    "lat": 44.8029594,
+    "lon": 10.3206352
+  },
+  "tags": {
+    "alt_name": "ZTL Parma - Zona 3",
+    "alt_name:en": "Limited Traffic Zone Parma - Zona 3",
+    "alt_name:it": "Zona Traffico Limitato Parma - Zona 3",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-13",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Zona 3",
+    "operator": "Polizia Locale di Parma",
+    "source": "Comune di Parma",
+    "taxi": "yes",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (07:30-19:30)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19457676,
+  "center": {
+    "lat": 44.8041515,
+    "lon": 10.3298071
+  },
+  "tags": {
+    "alt_name": "ZTL Parma - Zona 1",
+    "alt_name:en": "Limited Traffic Zone Parma - Zona 1",
+    "alt_name:it": "Zona Traffico Limitato Parma - Zona 1",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-13",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Zona 1",
+    "operator": "Polizia Locale di Parma",
+    "source": "Comune di Parma",
+    "taxi": "yes",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (07:30-19:30)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19457730,
+  "center": {
+    "lat": 45.6500730,
+    "lon": 9.2044334
+  },
+  "tags": {
+    "alt_name": "ZTL Seregno - Centro Storico",
+    "alt_name:en": "Limited Traffic Zone Seregno - Historic Centre",
+    "alt_name:it": "Zona Traffico Limitato Seregno - Centro Storico",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Centro Storico",
+    "operator": "Polizia Locale di Seregno",
+    "source": "Comune di Seregno",
+    "source:url": "https://www.seregno.tv/seregno-ztl-cosa-cambia-dal-26-luglio/",
+    "type": "boundary",
+    "vehicle": "permit",
+    "vehicle:conditional": "yes @ (Mo-Sa 05:00-20:00)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19525024,
+  "center": {
+    "lat": 43.6771940,
+    "lon": 10.5494165
+  },
+  "tags": {
+    "alt_name": "ZTL Cascina - Zona Nord",
+    "alt_name:en": "Limited Traffic Zone Cascina - Zona Nord",
+    "alt_name:it": "Zona Traffico Limitato Cascina - Zona Nord",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Nord",
+    "operator": "Polizia Municipale di Cascina",
+    "source": "Comune di Cascina",
+    "source:url": "https://www.comune.cascina.pi.it/s3prod/uploads/ckeditor/attachments/1/8/9/1/5/ZTL_definitiva_varco_1_corso_m_e_varco_2_v_garibaldi1.pdf",
+    "type": "boundary",
+    "vehicle": "permit",
+    "vehicle:conditional": "yes @ (Sa-Su 07:30-20:00; PH 07:30-20:00)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19525025,
+  "center": {
+    "lat": 43.6759257,
+    "lon": 10.5498623
+  },
+  "tags": {
+    "alt_name": "ZTL Cascina - Zona Sud",
+    "alt_name:en": "Limited Traffic Zone Cascina - Zona Sud",
+    "alt_name:it": "Zona Traffico Limitato Cascina - Zona Sud",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Sud",
+    "operator": "Polizia Municipale di Cascina",
+    "source": "Comune di Cascina",
+    "source:url": "https://www.comune.cascina.pi.it/s3prod/uploads/ckeditor/attachments/1/8/9/1/6/ZTL__SUD.pdf",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19525136,
+  "center": {
+    "lat": 45.7060716,
+    "lon": 9.8721100
+  },
+  "tags": {
+    "alt_name": "ZTL Entratico - Viale Libertà",
+    "alt_name:en": "Limited Traffic Zone Entratico - Viale Libertà",
+    "alt_name:it": "Zona Traffico Limitato Entratico - Viale Libertà",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-25",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Viale Libertà",
+    "operator": "Polizia Locale di Entratico",
+    "source": "Comune di Entratico",
+    "taxi": "yes",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (Mo-Fr 17:00-20:00)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19525326,
+  "center": {
+    "lat": 43.6569158,
+    "lon": 11.1856655
+  },
+  "tags": {
+    "alt_name": "ZTL San Casciano in Val di Pesa - Centro Storico",
+    "alt_name:en": "Limited Traffic Zone San Casciano in Val di Pesa - Historic Centre",
+    "alt_name:it": "Zona Traffico Limitato San Casciano in Val di Pesa - Centro Storico",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-08-25",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Centro Storico",
+    "operator": "Polizia Municioale di San Casciano in Val di Pesa",
+    "source": "Comune di San Casciano in Val di Pesa",
+    "source:url": "https://www.comune.san-casciano-val-di-pesa.fi.it/servizi/mobilita-e-trasporti/accesso-e-sosta-zona-traffico-limitato-nel-centro-storico-del",
+    "taxi": "yes",
+    "type": "boundary",
+    "vehicle": "permit",
+    "vehicle:conditional": "yes @ (Mo-Su 06:00-09:30, 18:30-19:15)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19549370,
+  "center": {
+    "lat": 43.8437222,
+    "lon": 10.5052884
+  },
+  "tags": {
+    "alt_name": "ZTL Lucca - Zona B",
+    "alt_name:en": "Limited Traffic Zone Lucca - Zona B",
+    "alt_name:it": "Zona Traffico Limitato Lucca - Zona B",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL B",
+    "note": "La ZTL è tracciata secondo la revisione del Disciplinare ZTL del 16/04/2024 a cura dell'Ufficio Lavori Pubblici e Traffico del Comune di Lucca",
+    "operator": "Polizia Municipale di Lucca",
+    "source": "Comune di Lucca",
+    "source:url": "https://www.comune.lucca.it/app/uploads/2025/02/Disciplinare2024.pdf",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19549417,
+  "center": {
+    "lat": 43.8438373,
+    "lon": 10.5052364
+  },
+  "tags": {
+    "alt_name": "ZTL Lucca - Zona C",
+    "alt_name:en": "Limited Traffic Zone Lucca - Zona C",
+    "alt_name:it": "Zona Traffico Limitato Lucca - Zona C",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL C",
+    "note": "La ZTL è tracciata secondo la revisione del Disciplinare ZTL del 16/04/2024 a cura dell'Ufficio Lavori Pubblici e Traffico del Comune di Lucca",
+    "operator": "Polizia Municipale di Lucca",
+    "source": "Comune di Lucca",
+    "source:url": "https://www.comune.lucca.it/app/uploads/2025/02/Disciplinare2024.pdf",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19549900,
+  "center": {
+    "lat": 43.8437325,
+    "lon": 10.5050183
+  },
+  "tags": {
+    "alt_name": "ZTL Lucca - Zona A",
+    "alt_name:en": "Limited Traffic Zone Lucca - Zona A",
+    "alt_name:it": "Zona Traffico Limitato Lucca - Zona A",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL A",
+    "note": "La ZTL è tracciata secondo la revisione del Disciplinare ZTL del 16/04/2024 a cura dell'Ufficio Lavori Pubblici e Traffico del Comune di Lucca",
+    "operator": "Polizia Municipale di Lucca",
+    "source": "Comune di Lucca",
+    "source:url": "https://www.comune.lucca.it/app/uploads/2025/02/Disciplinare2024.pdf",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19556806,
+  "center": {
+    "lat": 45.0004022,
+    "lon": 7.6847166
+  },
+  "tags": {
+    "alt_name": "ZTL Moncalieri - Esterna",
+    "alt_name:en": "Limited Traffic Zone Moncalieri - Esterna",
+    "alt_name:it": "Zona Traffico Limitato Moncalieri - Esterna",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-09-02",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Esterna",
+    "note": "ZTL esterna attiva solamente in caso di grandi manifestazioni previa Ordinanza del Comando di Polizia Locale. I due varchi sono situati in Piazza Caduti / Via Matteotti e Via Alfieri / Via Palestro",
+    "operator": "Polizia Locale di Moncalieri",
+    "source": "Comune di Moncalieri",
+    "source:image": "https://www.comune.moncalieri.to.it/sites/default/files/styles/wide/public/2025-03/Immagine%202025-03-18%20175456.png.webp?itok=euQypfmh",
+    "source:url": "https://www.comune.moncalieri.to.it/schede-informative/ztl",
+    "type": "boundary",
+    "vehicle": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 19556807,
+  "center": {
+    "lat": 45.0007544,
+    "lon": 7.6845480
+  },
+  "tags": {
+    "alt_name": "ZTL Moncalieri - Centrale",
+    "alt_name:en": "Limited Traffic Zone Moncalieri - Centrale",
+    "alt_name:it": "Zona Traffico Limitato Moncalieri - Centrale",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-09-02",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Centrale",
+    "note": "ZTL Centrale attiva tutti i giorni della settimana con orario 0:00 -  24:00. I due varchi sono situati in Piazza Vittorio Emanuele II / Vicolo Duch e Piazza Vittorio Emanuele II / Via Carlo Alberto.",
+    "operator": "Polizia Locale di Moncalieri",
+    "source": "Comune di Moncalieri",
+    "source:image": "https://www.comune.moncalieri.to.it/sites/default/files/styles/wide/public/2025-03/Immagine%202025-03-18%20175456.png.webp?itok=euQypfmh",
+    "source:url": "https://www.comune.moncalieri.to.it/schede-informative/ztl",
+    "type": "boundary",
+    "vehicle": "permit"
+  }
+},
+{
+  "type": "relation",
+  "id": 19556808,
+  "center": {
+    "lat": 45.0007856,
+    "lon": 7.6845990
+  },
+  "tags": {
+    "alt_name": "ZTL Moncalieri - Interna",
+    "alt_name:en": "Limited Traffic Zone Moncalieri - Interna",
+    "alt_name:it": "Zona Traffico Limitato Moncalieri - Limited Traffic Zone Moncalieri - Interna",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-09-02",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Interna",
+    "note": "ZTL Interna attiva tutti i giorni con il seguente orario:  feriali 19.30-01.30, festivi 10:00-01.30. I tre varchi sono situati in Via San Martino / Vicolo Muratori, Via San Martino / Piazza Umberto I, Via Alfieri / Via Principessa Clotilde",
+    "operator": "Polizia Locale di Moncalieri",
+    "source": "Comune di Moncalieri",
+    "source:image": "https://www.comune.moncalieri.to.it/sites/default/files/styles/wide/public/2025-03/Immagine%202025-03-18%20175456.png.webp?itok=euQypfmh",
+    "source:url": "https://www.comune.moncalieri.to.it/schede-informative/ztl",
+    "type": "boundary",
+    "vehicle": "yes",
+    "vehicle:conditional": "permit @ (Mo-Sa 19:30-01:30; Su 10:00-01:30; PH 10:00-01:30)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19595479,
+  "center": {
+    "lat": 43.8219660,
+    "lon": 11.1357144
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "enforcement": "access",
+    "name": "ZTL Centro",
+    "type": "enforcement",
+    "vehicle": "permit",
+    "vehicle:conditional": "permit @ (Mo-Fr 09:00-17:00; Sa 09:00-24:00; Su,PH)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19595505,
+  "center": {
+    "lat": 43.8389068,
+    "lon": 11.1325899
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "enforcement": "access",
+    "name": "ZTL centro storico di Capalle",
+    "type": "enforcement",
+    "vehicle:conditional": "no @ (09:00-19:00)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19595568,
+  "center": {
+    "lat": 46.0634453,
+    "lon": 13.2352307
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "enforcement": "access",
+    "name": "ZTL Centro",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19695618,
+  "center": {
+    "lat": 44.4968498,
+    "lon": 11.3515936
+  },
+  "tags": {
+    "alt_name:en": "Limited Traffic Zone Bologna - U Zone",
+    "alt_name:it": "Zona Traffico Limitato Bologna - Zona U",
+    "author": "Comune di Bologna",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "check_date": "2025-12-08",
+    "emergency": "yes",
+    "goods": "permit",
+    "motor_vehicle": "permit",
+    "name": "ZTL Bologna - Zona Università",
+    "operator": "Comune di Bologna",
+    "psv": "yes",
+    "short_name": "Zona U",
+    "source": "Comune di Bologna",
+    "type": "boundary",
+    "website": "https://www.comune.bologna.it/informazioni/zona-universita"
+  }
+},
+{
+  "type": "relation",
+  "id": 19722349,
+  "center": {
+    "lat": 44.4955330,
+    "lon": 11.3297738
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTLS Pratello varco Via San Rocco",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19722350,
+  "center": {
+    "lat": 44.4968497,
+    "lon": 11.3336223
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTLS Pratello varco Via Paradiso",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19722351,
+  "center": {
+    "lat": 44.4956558,
+    "lon": 11.3345985
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTLS Pratello varco Via de' Coltellini",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19722352,
+  "center": {
+    "lat": 44.4956665,
+    "lon": 11.3367041
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTLS Pratello varco Piazza Malpighi",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19722353,
+  "center": {
+    "lat": 44.4950784,
+    "lon": 11.3287612
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTLS Pratello varco Via Calari",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19722354,
+  "center": {
+    "lat": 44.4943596,
+    "lon": 11.3307791
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTLS Pratello varco Via Pietralata",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 19722368,
+  "center": {
+    "lat": 44.4985493,
+    "lon": 11.3465601
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTLS Moline-Capo di Lucca varco Moline",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 20065209,
+  "center": {
+    "lat": 43.7252904,
+    "lon": 12.6360608
+  },
+  "tags": {
+    "access:conditional": "yes @ permit",
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "delivery:conditional": "yes @ Mo-Sa 05:00-10:00,14:30-16:30",
+    "description": "Zona a Traffico Limitato del Comune di Urbino",
+    "disabled": "yes",
+    "emergency": "yes",
+    "enforcement": "camera",
+    "fee": "yes",
+    "maxweight": "3.5",
+    "moped": "yes",
+    "motor_vehicle:conditional": "no @ (Nov 01-Apr 30 (Su,PH 00:00-24:00; Mo-Sa 00:00-08:30,10:30-18:00); May 01-Oct 31 (Su,PH 00:00-24:00; Mo-Sa 18:30-24:00,00:00-07:30))",
+    "name": "ZTL Urbino",
+    "operator": "Comune di Urbino",
+    "permit": "yes",
+    "public_service": "yes",
+    "service": "yes",
+    "source": "Comune di Urbino",
+    "source:website": "https://www.urbinoservizi.it/servizio/ztl/",
+    "taxi": "yes",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 20085030,
+  "center": {
+    "lat": 43.5453381,
+    "lon": 10.3145830
+  },
+  "tags": {
+    "boundary": "low_emission_zone",
+    "carpool": "yes",
+    "description": "divieto di circolazione 24/7 per alcuni veicoli di classe EURO 0 ed EURO 1; vedere cartelli stradali od ordinanza per i dettagli",
+    "disabled": "yes",
+    "electric_vehicle": "yes",
+    "emergency": "yes",
+    "hgv:conditional": "no @ (emissions<euro_1)",
+    "moped:conditional": "no @ (emissions<euro_2)",
+    "motor_vehicle": "yes",
+    "motorcar:conditional": "no @ ((fuel:gasoline AND emissions<euro_1) OR (fuel:diesel AND emissions<euro_2))",
+    "name": "Delimitazione area urbana ai fini del contenimento delle emissioni delle PM10",
+    "related_law": "Ordinanza № 87776 del 02/11/2009 del Comune di Livorno",
+    "start_date": "2009-11-02",
+    "type": "boundary",
+    "url": "https://wiki.openstreetmap.org/wiki/Livorno#Zona_a_basse_emissioni"
+  }
+},
+{
+  "type": "relation",
+  "id": 20102559,
+  "center": {
+    "lat": 45.4493368,
+    "lon": 9.1734444
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "motor_vehicle": "no",
+    "name": "ZTL:Navigli",
+    "note:en": "The “Navigli” LTZ (Limited Traffic Zone) in Milan is active every day from 8PM to 7AM. The “Navigli – Via Fumagalli” LTZ is active 24 hours a day, every day of the week. The mapped area includes both streets and pedestrian zones (see city of Milan website",
+    "source": "https://servizicrm.comune.milano.it/centro-supporto/KA-01121/Elenco-corsie-riservate-ZTL-a-Milano",
+    "type": "boundary",
+    "website": "https://www.comune.milano.it/"
+  }
+},
+{
+  "type": "relation",
+  "id": 20161157,
+  "center": {
+    "lat": 44.7721772,
+    "lon": 10.7787179
+  },
+  "tags": {
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "description": "Zona Traffico Limitato - Settore 4 - Contrassegno Bianco",
+    "electric_vehicle": "yes",
+    "emergency": "yes",
+    "motor_vehicle": "no",
+    "motor_vehicle:conditional": "permit @ (24/7)",
+    "name": "ZTL Settore 4",
+    "operator": "Comune di Correggio",
+    "short_name": "Settore 4",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20161180,
+  "center": {
+    "lat": 44.7699214,
+    "lon": 10.7805642
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "description": "Zona Traffico Limitato - Settore 2 - Contrassegno Rosso",
+    "electric_vehicle": "yes",
+    "emergency": "yes",
+    "motor_vehicle": "no",
+    "motor_vehicle:conditional": "permit @ (24/7)",
+    "name": "ZTL Settore 2",
+    "operator": "Comune di Correggio",
+    "short_name": "Settore 2",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20161181,
+  "center": {
+    "lat": 44.7716595,
+    "lon": 10.7810151
+  },
+  "tags": {
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "description": "Zona Traffico Limitato - Settore 1 - Contrassegno Blu",
+    "electric_vehicle": "yes",
+    "emergency": "yes",
+    "motor_vehicle": "no",
+    "motor_vehicle:conditional": "permit @ (24/7)",
+    "name": "ZTL Settore 1",
+    "operator": "Comune di Correggio",
+    "short_name": "Settore 1",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20161182,
+  "center": {
+    "lat": 44.7704178,
+    "lon": 10.7779855
+  },
+  "tags": {
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "description": "Zona Traffico Limitato - Settore 3 - Contrassegno Giallo",
+    "electric_vehicle": "yes",
+    "emergency": "yes",
+    "motor_vehicle": "no",
+    "motor_vehicle:conditional": "permit @ (24/7)",
+    "name": "ZTL Settore 3",
+    "operator": "Comune di Correggio",
+    "short_name": "Settore 3",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20204987,
+  "center": {
+    "lat": 43.4692653,
+    "lon": 11.2870267
+  },
+  "tags": {
+    "enforcement": "access",
+    "name": "ZTL Castellina in Chianti",
+    "type": "enforcement"
+  }
+},
+{
+  "type": "relation",
+  "id": 20670025,
+  "center": {
+    "lat": 40.3540795,
+    "lon": 18.1693589
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "goods": "no",
+    "goods:conditional": "destination @ (Mo-Sa 05:30-09:30,15:00-16:00; Su,PH 06:00-09:30)",
+    "name": "ZTL Lecce",
+    "source": "Città di Lecce",
+    "type": "boundary",
+    "vehicle": "private",
+    "vehicle:conditional": "yes @ (Mo-Sa 10:00-13:00,16:30-20:00)",
+    "website": "https://www.comune.lecce.it/news/dettaglio/2025/07/17/modifiche-ztl-nuove-ordinanze"
+  }
+},
+{
+  "type": "relation",
+  "id": 20670093,
+  "center": {
+    "lat": 40.8172678,
+    "lon": 16.4154013
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Gravina in Puglia",
+    "operator": "Comune di Gravina in Puglia",
+    "source": "Comune di Gravina in Puglia",
+    "type": "boundary",
+    "vehicle": "private",
+    "vehicle:conditional": "yes @ (Mo-Sa 06:00-19:00)",
+    "website": "https://www.comune.gravina.ba.it/documents/d/guest/ztl-brochure-1-pdf"
+  }
+},
+{
+  "type": "relation",
+  "id": 20670228,
+  "center": {
+    "lat": 40.9531871,
+    "lon": 17.3039489
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Monopoli",
+    "type": "boundary",
+    "vehicle": "private",
+    "vehicle:conditional": "yes @ (Mo-Sa 08:00-10:00,15:00-17:00)"
+  }
+},
+{
+  "type": "relation",
+  "id": 20729298,
+  "center": {
+    "lat": 43.6718322,
+    "lon": 10.6396037
+  },
+  "tags": {
+    "alt_name": "ZTL Pontedera",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "name": "ZTL Villaggio Scolastico",
+    "name:en": "ZTL School Area",
+    "note": "Restriction active only during school period (Sep–Jun) and per municipal calendar/holidays.",
+    "operator": "Comune di Pontedera",
+    "type": "boundary",
+    "website": "https://www.comune.pontedera.pi.it/ztl-villaggio-scolastico/"
+  }
+},
+{
+  "type": "relation",
+  "id": 20736632,
+  "center": {
+    "lat": 44.4105583,
+    "lon": 8.9411833
+  },
+  "tags": {
+    "access:conditional": "yes @ (Mo -Th 19:00-07:00; Sa-Su)",
+    "boundary": "low_emission_zone",
+    "emergency": "yes",
+    "fixme": "aggiungere conditional per diesel e altri veicoli, attualmante è impostato per soli veicoli a benzina",
+    "source": "Comune di Genova",
+    "type": "boundary",
+    "url": "https://www.comune.genova.it/tutti-gli-argomenti/ambiente/aria/limitazione-alla-circolazione-motivi-ambientali",
+    "vehicle:conditional": "no @ (emissions < euro_2)"
+  }
+},
+{
+  "type": "relation",
+  "id": 21044253,
+  "center": {
+    "lat": 41.1296117,
+    "lon": 16.8694764
+  },
+  "tags": {
+    "bicycle": "yes",
+    "boundary": "limited_traffic_zone",
+    "disabled": "yes",
+    "emergency": "yes",
+    "goods": "no",
+    "goods:conditional": "destination @ (09:00-11:00,16:00-18:00)",
+    "moped": "yes",
+    "motorcar": "permit",
+    "motorcycle": "yes",
+    "name": "ZTL della Città Vecchia",
+    "type": "boundary",
+    "website": "https://www.amtab.it/it/zona-a-traffico-limitato"
+  }
+},
+{
+  "type": "relation",
+  "id": 21051514,
+  "center": {
+    "lat": 41.0816813,
+    "lon": 16.7808615
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "name": "Ztl del Centro Storico",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21222482,
+  "center": {
+    "lat": 38.0381374,
+    "lon": 12.5863952
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "motor_vehicle": "permit",
+    "name": "ZTL Verde Erice",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21222483,
+  "center": {
+    "lat": 38.0377093,
+    "lon": 12.5859413
+  },
+  "tags": {
+    "boundary": "limited_traffic_zone",
+    "motor_vehicle": "permit",
+    "motor_vehicle:conditional": "permit @ (Jul 15-Sep 15: Mo-Su 02:00-11:00)",
+    "name": "ZTL Rossa Erice",
+    "type": "boundary"
+  }
+}
+
+  ]
+}

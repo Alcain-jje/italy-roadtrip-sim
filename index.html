@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Italia Roadtrip ZTL Sim</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  :root{
+    --bg:#14161a; --panel:#1c1f25; --line:#2b3039; --fg:#e8eaee; --muted:#8b93a1;
+    --ok:#2ecc71; --bad:#ff4d4f; --warn:#f5a623; --accent:#4c8dff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font:14px/1.45 system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif;background:var(--bg);color:var(--fg)}
+  #app{display:grid;grid-template-columns:360px 1fr;grid-template-rows:100vh;height:100vh;overflow:hidden}
+  #side{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-width:0;min-height:0}
+  #side header{padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+  #side h1{font-size:16px;margin:0 0 2px}
+  #side .sub{color:var(--muted);font-size:12px}
+  #legs{flex:1;min-height:0;overflow:auto;padding:8px}
+  .leg{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;cursor:pointer;background:#20242b}
+  .leg:hover{border-color:#3a4150}
+  .leg.active{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+  .leg .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .leg .date{font-weight:600}
+  .leg .title{color:var(--fg);margin-top:2px}
+  .leg .meta{color:var(--muted);font-size:12px;margin-top:4px}
+  .badge{font-size:11px;padding:2px 7px;border-radius:999px;font-weight:600;white-space:nowrap}
+  .b-ok{background:rgba(46,204,113,.15);color:var(--ok)}
+  .b-bad{background:rgba(255,77,79,.18);color:var(--bad)}
+  .b-wait{background:rgba(139,147,161,.18);color:var(--muted)}
+  .b-info{background:rgba(245,166,35,.16);color:var(--warn)}
+  .leg .wps{font-size:12px;color:var(--muted);margin-top:6px}
+  .leg .wps span{display:inline-block;background:#2a2f38;border-radius:4px;padding:1px 6px;margin:2px 4px 0 0}
+  #ctrl{border-top:1px solid var(--line);padding:12px 16px;display:grid;gap:10px}
+  .row{display:flex;align-items:center;gap:10px}
+  button{background:var(--accent);color:#fff;border:0;border-radius:6px;padding:7px 14px;font-weight:600;cursor:pointer}
+  button.secondary{background:#2a2f38;color:var(--fg)}
+  button:disabled{opacity:.45;cursor:default}
+  input[type=range]{flex:1}
+  label.chk{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:13px;cursor:pointer}
+  #status{font-size:12px;color:var(--muted);min-height:16px}
+  input.dep{background:#2a2f38;color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:1px 4px;font-size:12px}
+  #map{height:100%;min-height:0}
+  .leaflet-container{background:#0f1114}
+  .hotel-icon{background:var(--accent);color:#fff;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-size:13px;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.5)}
+  .park-icon{background:#fff;color:#111;border-radius:4px;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;border:2px solid #333}
+  .via-icon{background:#f5a623;border-radius:50%;width:12px;height:12px;border:2px solid #fff}
+  .car-icon{font-size:22px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.6))}
+  .legend{background:rgba(28,31,37,.92);color:var(--fg);padding:8px 10px;border-radius:6px;font-size:12px;line-height:1.7;border:1px solid var(--line)}
+  .legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-2px;border-radius:2px}
+  .leaflet-popup-content{font-size:13px}
+  #side header a{color:var(--accent);font-size:12px;text-decoration:none;margin-left:8px}
+  @media (max-width: 820px){
+    #app{grid-template-columns:1fr;grid-template-rows:52vh 48vh}
+    #map{order:0}
+    #side{order:1;border-right:0;border-top:1px solid var(--line)}
+    #side header{padding:8px 12px 6px}
+    #side h1{font-size:14px}
+    #legs{padding:6px}
+    .leg{padding:8px 10px;margin-bottom:6px}
+    #ctrl{padding:8px 12px;gap:6px}
+    .legend{font-size:11px;line-height:1.5;max-width:230px}
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <header>
+      <h1>이탈리아 렌트카 ZTL 시뮬레이터 <a href="plan.html">여행계획 →</a></h1>
+      <div class="sub">2026-10-06 ~ 10-12 · Roma → Furore → Toscana → Firenze → Milano</div>
+    </header>
+    <div id="legs"></div>
+    <div id="ctrl">
+      <div class="row">
+        <button id="play" disabled>▶ 재생</button>
+        <button id="stop" class="secondary" disabled>■ 정지</button>
+        <span style="color:var(--muted);font-size:12px">속도</span>
+        <input id="speed" type="range" min="1" max="10" value="4">
+      </div>
+      <div class="row">
+        <label class="chk"><input id="ztlToggle" type="checkbox" checked> ZTL 레이어</label>
+        <label class="chk"><input id="allToggle" type="checkbox" checked> 전체 구간 표시</label>
+        <button id="reroute" class="secondary" style="margin-left:auto">전체 재계산</button>
+      </div>
+      <div id="status">경로 계산 중…</div>
+    </div>
+  </aside>
+  <div id="map"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+<script src="ztl_data.js"></script> <!-- 공식/OSM ZTL 폴리곤 (python build_ztl.py 로 생성). 없으면 수작업 근사로 동작 -->
+<script>
+// =====================================================================
+// CONFIG — 좌표/일정/ZTL은 여기만 수정하면 됨. 좌표는 [lat, lng].
+// =====================================================================
+const CONFIG = {
+  places: {
+    hertzTermini:  { name:'Hertz 로마 테르미니 (픽업)', type:'hotel', ll:[41.8989,12.5033], note:'Via Giolitti 34 · 10/6 픽업' },
+    huRoma:        { name:'hu Roma Camping in Town',   type:'hotel', ll:[41.88678,12.40611], note:'Via Aurelia 831 · 10/4~10/7 · 무료 주차' },
+    portaPortese:  { name:'Porta Portese / Ponte Sublicio (경유)', type:'via', ll:[41.8817,12.4735], note:'ZTL Centro Storico 남쪽 우회: Colosseo → Circo Massimo → Lungotevere → Viale Trastevere' },
+    napoliBrin:    { name:'Napoli Parcheggio Brin',   type:'park',  ll:[40.84618,14.28030], note:'Via Brin 1 · €0.5/h 최대 €5 · 항구 옆 ZTL 밖 · Da Michele 도보 12분' },
+    pompeiPark:    { name:'Pompei Porta Marina 주차',  type:'park',  ll:[40.74848,14.48193], note:'Piazza Esedra/Camping Zeus · 13:00~17:30 슬롯 사전예매' },
+    agerola:       { name:'Agerola (SS366 고개 경유)',  type:'via',   ll:[40.6390,14.5410], note:'SS163 해안도로 대신 산길 경유' },
+    vignaBacco:    { name:'La Vigna di Bacco (Furore)', type:'hotel', ll:[40.62026,14.54881], note:'Via G.B. Lama 9 · 10/7~10/9 · 무료 주차(계단 위)' },
+    positanoPark:  { name:'Positano Garage Mandara',   type:'park',  ll:[40.63099,14.48478], note:'Via Pasitea(일방통행 루프) · 승용차 진입 가능(ZTL은 9인승 이상만) · 유료' },
+    amalfiPark:    { name:'Amalfi Luna Rossa 주차',     type:'park',  ll:[40.63407,14.60672], note:'SS163 동쪽 · 도심 ZTL 진입 금지, 여기서 도보' },
+    orvietoPark:   { name:'Orvieto Campo della Fiera 주차', type:'park', ll:[42.71679,12.10523], note:'에스컬레이터로 구시가 · 점심' },
+    impostino:     { name:"Antico Casale L'Impostino",  type:'hotel', ll:[43.023671,11.307418], note:'Civitella Marittima · 10/9~10/10' },
+    pienzaPark:    { name:'Pienza 마을 입구 주차',       type:'park',  ll:[43.07747,11.67653], note:'Piazza Dante Alighieri · Porta al Murello 앞 · ZTL 밖' },
+    montepulP1:    { name:'Montepulciano P1 Porta al Prato', type:'park', ll:[43.09682,11.78522], note:'ZTL 밖 · Corso 오르막 · 점심 Acquacheta' },
+    sienaStadio:   { name:'Siena Parcheggio Stadio',    type:'park',  ll:[43.32160,11.32465], note:'Via della Sapienza · ZTL 밖 · Fortezza 옆' },
+    huFirenze:     { name:'hu Firenze Camping in Town', type:'hotel', ll:[43.7652,11.3074], note:'Via Gen. dalla Chiesa 1/3 (Rovezzano) · 10/10~10/12 · ZTL 밖' },
+    bolognaViali:  { name:'Bologna Porta Galliera (viali 경유)', type:'via', ll:[44.5046,11.3436], note:'순환도로(viali)로 진입·이탈 · Via San Felice/Irnerio 관통 금지' },
+    bolognaP:      { name:'Bologna Piazza VIII Agosto 주차', type:'park', ll:[44.50038,11.34536], note:'24h 지하 · ZTL 밖(경계 인접) · 볼로냐 ZTL 매일 07~20' },
+    hertzMilano:   { name:'Hertz 밀라노 중앙역 (반납)',  type:'hotel', ll:[45.48504,9.20484], note:'Piazza Luigi di Savoia · 10/12 반납 · Area C 밖' },
+  },
+  legs: [
+    // iso = 날짜, depart = 출발 시각(현지, 화면에서 수정 가능). ZTL 도착 시각 = 출발 + 진행률 × OSRM 소요시간
+    { date:'10/06 (화)', iso:'2026-10-06', depart:'15:00', title:'렌트카 픽업 → 캠핑장 주차', wps:['hertzTermini','portaPortese','huRoma'] },
+    { date:'10/07 (수)', iso:'2026-10-07', depart:'08:00', title:'로마 → 나폴리 → 폼페이 → 푸로레', wps:['huRoma','napoliBrin','pompeiPark','agerola','vignaBacco'] },
+    { date:'10/08 (목)', iso:'2026-10-08', depart:'09:00', title:'아말피 코스트 (포지타노·아말피 왕복)', wps:['vignaBacco','positanoPark','amalfiPark','vignaBacco'] },
+    { date:'10/09 (금)', iso:'2026-10-09', depart:'08:30', title:'푸로레 → 오르비에토 → 토스카나 남부', wps:['vignaBacco','orvietoPark','impostino'] },
+    { date:'10/10 (토)', iso:'2026-10-10', depart:'08:45', title:'피엔차 → 몬테풀치아노 → 시에나 → 피렌체', wps:['impostino','pienzaPark','montepulP1','sienaStadio','huFirenze'], tentative:true },
+    { date:'10/12 (월)', iso:'2026-10-12', depart:'08:30', title:'피렌체 → 볼로냐 → 밀라노 중앙역 반납', wps:['huFirenze','bolognaViali','bolognaP','bolognaViali','hertzMilano'] },
+  ],
+  // ZTL 근사 폴리곤 (수작업). 공식/OSM 데이터(ztl_data.js)에 같은 city가 있으면 그 도시의 수작업 항목은 무시된다.
+  // kind: 'ztl' = 진입 시 위반, 'night' = 야간(금·토)만 위반, 'sector' = 섹터 구분선(표시만), 'info' = 표시만
+  // sched: 'always' | [{d:[요일 0=일…6=토], f:'HH:MM', t:'HH:MM'}] | 미지정(=판정 안 함)
+  ztl: [
+    { city:'Roma', name:'Roma ZTL Centro Storico', kind:'ztl', hours:'월~금 06:30~18:00, 토 14:00~18:00', sched:[{d:[1,2,3,4,5],f:'06:30',t:'18:00'},{d:[6],f:'14:00',t:'18:00'}],
+      ring:[[41.9115,12.4765],[41.9060,12.4880],[41.8990,12.4870],[41.8940,12.4835],[41.8930,12.4760],[41.8975,12.4660],[41.9030,12.4650],[41.9100,12.4720]] },
+    { city:'Napoli', name:'Napoli ZTL Centro Antico', kind:'ztl', sched:[{d:[1,2,3,4,5,6],f:'09:00',t:'18:00'}], hours:'월~토 09:00~18:00 (대략, 구역별 상이) · 항구도로 Via Marina는 밖',
+      ring:[[40.8560,14.2480],[40.8560,14.2620],[40.8500,14.2640],[40.8450,14.2600],[40.8455,14.2500],[40.8500,14.2470]] },
+    { city:'Bologna', name:'Bologna ZTL Centro', kind:'ztl', sched:[{d:[0,1,2,3,4,5,6],f:'07:00',t:'20:00'}], hours:'매일 07:00~20:00 · viali 순환도로는 밖',
+      ring:[[44.4985,11.3300],[44.4985,11.3400],[44.4988,11.3500],[44.5022,11.3500],[44.5022,11.3540],[44.4920,11.3560],[44.4870,11.3440],[44.4890,11.3300],[44.4960,11.3285]] },
+    { city:'Positano', name:'Positano ZTL (참고)', kind:'info', hours:'상시 · 9인승 이상 차량만 해당, 승용차 통행 가능 · 루프 도로 노상 주정차 금지', circle:{c:[40.6290,14.4860], r:0.35} },
+    { city:'Amalfi', name:'Amalfi ZTL', kind:'ztl', sched:'always', hours:'상시(비거주자) · 해안도로 SS163은 통행 가능',
+      ring:[[40.6343,14.6008],[40.6343,14.6048],[40.6372,14.6055],[40.6395,14.6035],[40.6380,14.6003]] },
+    { city:'Pienza', name:'Pienza ZTL', kind:'ztl', sched:'always', hours:'상시 · Porta al Murello 동쪽 성내',
+      ring:[[43.0776,11.6778],[43.0776,11.6812],[43.0757,11.6812],[43.0757,11.6778]] },
+    { city:'Siena', name:'Siena ZTL', kind:'ztl', sched:'always', hours:'상시(거의 전 시간) · Fortezza/Stadio/La Lizza는 밖',
+      ring:[[43.3270,11.3262],[43.3262,11.3300],[43.3235,11.3345],[43.3195,11.3385],[43.3140,11.3375],[43.3105,11.3325],[43.3115,11.3265],[43.3160,11.3255],[43.3200,11.3285],[43.3235,11.3280]] },
+    { city:'Firenze', name:'Firenze ZTL (A~O)', kind:'ztl', hours:'월~금 07:30~20:00, 토 07:30~16:00', sched:[{d:[1,2,3,4,5],f:'07:30',t:'20:00'},{d:[6],f:'07:30',t:'16:00'}],
+      ring:[[43.7760,11.2440],[43.7815,11.2560],[43.7790,11.2660],[43.7720,11.2740],[43.7660,11.2700],[43.7620,11.2620],[43.7640,11.2500],[43.7700,11.2430]] },
+    { city:'Milano', name:'Milano Area C', kind:'ztl', hours:'월~금 07:30~19:30 (목 ~18:00) 유료(€7.5)', sched:[{d:[1,2,3,5],f:'07:30',t:'19:30'},{d:[4],f:'07:30',t:'18:00'}],
+      ring:[[45.4835,9.1880],[45.4780,9.2000],[45.4680,9.2075],[45.4560,9.2010],[45.4500,9.1880],[45.4540,9.1730],[45.4640,9.1650],[45.4750,9.1690]] },
+  ],
+  osrm: 'https://router.project-osrm.org/route/v1/driving/',
+};
+
+const EDGE_TOLERANCE_M = 25;   // 경계 도로 허용 폭(m)
+
+// =====================================================================
+// 지도 초기화
+// =====================================================================
+const map = L.map('map', { zoomControl:true }).setView([43.2, 12.2], 6);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom:19, attribution:'&copy; OpenStreetMap · routing: OSRM demo'
+}).addTo(map);
+L.control.scale({ imperial:false }).addTo(map);
+new ResizeObserver(() => map.invalidateSize()).observe(document.getElementById('map'));
+
+function fitAll() {
+  const layers = legState.filter(s => s.layer).map(s => s.layer);
+  if (!layers.length) return;
+  map.invalidateSize();
+  const b = L.latLngBounds([]); layers.forEach(l => b.extend(l.getBounds()));
+  map.fitBounds(b.pad(0.08), { animate:false });
+  if (map.getZoom() < 4) requestAnimationFrame(fitAll);   // 컨테이너 크기 미확정 시 재시도
+}
+
+const legend = L.control({ position:'bottomright' });
+legend.onAdd = () => {
+  const d = L.DomUtil.create('div','legend');
+  d.innerHTML = `<i style="background:#ff4d4f"></i>ZTL (진입 시 과태료) &nbsp;<i style="background:#ff8a8c;opacity:.6"></i>섹터선<br>
+    <i style="background:#b06cff"></i>야간 ZTL (금·토 야간만) &nbsp;<i style="background:#f5a623"></i>참고(LEZ·버스ZTL)<br>
+    <i style="background:#4c8dff"></i>경로 정상 &nbsp; <i style="background:#ff4d4f;border-radius:0"></i>경로가 ZTL 통과<br>
+    🏨 숙소/픽업·반납 &nbsp; P 주차 웨이포인트 &nbsp; ● 경유점<br>
+    <span style="color:var(--muted)">판정: 경계도로 ${EDGE_TOLERANCE_M}m 허용 · 도착시각 기준 활성 여부(빨강=위반, 주황=비활성 시간 통과)</span>`;
+  return d;
+};
+legend.addTo(map);
+
+// ZTL 레이어 — 공식/OSM(ztl_data.js) + 수작업 근사(CONFIG.ztl) 병합
+const ZTL_STYLE = {
+  ztl:    { color:'#ff4d4f', weight:2,   fillOpacity:0.22, dashArray:null },
+  night:  { color:'#b06cff', weight:1.5, fillOpacity:0.05, dashArray:'4 6' },
+  sector: { color:'#ff8a8c', weight:1,   fillOpacity:0,    dashArray:'2 4' },
+  info:   { color:'#f5a623', weight:2,   fillOpacity:0.06, dashArray:'6 6' },
+};
+const ztlLayer = L.layerGroup().addTo(map);
+const official = Array.isArray(window.ZTL_OFFICIAL) ? window.ZTL_OFFICIAL : [];
+const officialCities = new Set(official.map(z => z.city));
+const ztlFeatures = [];
+let approxCount = 0;
+function addZtl(feature, meta) {
+  feature.properties = meta;
+  feature.bbox = turf.bbox(feature);
+  // 판정용 폴리곤: 경계를 EDGE_TOLERANCE_M 만큼 안쪽으로 줄인다.
+  // 공식/OSM 경계는 Lungotevere·viali 같은 '경계 도로' 위에 그려져 있어, 그 도로를 달리는 것만으로 진입 판정이 나는 오탐을 막기 위함.
+  feature.test = feature;
+  if (meta.kind === 'ztl' || meta.kind === 'night') {
+    try { const b = turf.buffer(feature, -EDGE_TOLERANCE_M / 1000, { units:'kilometers' }); if (b && b.geometry) feature.test = b; } catch (e) {}
+  }
+  const st = ZTL_STYLE[meta.kind] || ZTL_STYLE.ztl;
+  L.geoJSON(feature, { style:{ color:st.color, weight:st.weight, fillColor:st.color, fillOpacity:st.fillOpacity, dashArray:st.dashArray } })
+    .bindPopup(`<b>${meta.name}</b><br>${meta.hours}<br><small style="color:#888">${meta.source}</small>`)
+    .addTo(ztlLayer);
+  ztlFeatures.push(feature);
+}
+official.forEach(z => addZtl(turf.feature(z.geometry), { name:z.name, kind:z.kind, hours:z.hours, sched:z.sched, source:z.source, official:true }));
+CONFIG.ztl.forEach(z => {
+  if (officialCities.has(z.city)) return;               // 공식 데이터가 있는 도시는 근사 폴리곤 생략
+  let feature;
+  if (z.circle) feature = turf.circle([z.circle.c[1], z.circle.c[0]], z.circle.r, { steps:48, units:'kilometers' });
+  else { const ring = z.ring.map(p => [p[1], p[0]]); ring.push(ring[0]); feature = turf.polygon([ring]); }
+  approxCount++;
+  addZtl(feature, { name:z.name + ' (근사)', kind:z.kind, hours:z.hours, sched:z.sched, source:'수작업 근사 폴리곤 — 공식 데이터 없음', official:false });
+});
+document.querySelector('#side .sub').textContent +=
+  ` · ZTL 폴리곤 공식/OSM ${official.length}개 + 근사 ${approxCount}개`;
+
+// 장소 마커 (드래그 가능 → 재라우팅)
+const placeMarkers = {};
+for (const [id, p] of Object.entries(CONFIG.places)) {
+  const html = p.type==='hotel' ? '🏨' : p.type==='park' ? 'P' : '';
+  const cls = p.type==='hotel' ? 'hotel-icon' : p.type==='park' ? 'park-icon' : 'via-icon';
+  const size = p.type==='hotel' ? 26 : p.type==='park' ? 20 : 12;
+  const icon = L.divIcon({ className:'', html:`<div class="${cls}">${html}</div>`, iconSize:[size,size], iconAnchor:[size/2,size/2] });
+  const m = L.marker(p.ll, { icon, draggable:true, title:p.name }).addTo(map)
+    .bindPopup(`<b>${p.name}</b><br>${p.note}<br><small>드래그하면 관련 구간 재계산</small>`);
+  m.on('dragend', () => {
+    const ll = m.getLatLng(); p.ll = [ll.lat, ll.lng];
+    CONFIG.legs.forEach((leg, i) => { if (leg.wps.includes(id)) routeLeg(i); });
+  });
+  placeMarkers[id] = m;
+}
+
+// =====================================================================
+// 라우팅 (OSRM) + ZTL 판정
+// =====================================================================
+const legState = CONFIG.legs.map(() => ({ line:null, layer:null, km:0, min:0, hits:[], status:'wait' }));
+const routeLayer = L.layerGroup().addTo(map);
+let activeLeg = -1;
+
+function cacheKey(coords){ return 'osrm:' + coords.map(c => c.map(v => v.toFixed(5)).join(',')).join(';'); }
+
+async function fetchRoute(coordsLatLng) {
+  const key = cacheKey(coordsLatLng);
+  try { const c = localStorage.getItem(key); if (c) return JSON.parse(c); } catch(e) {}
+  const path = coordsLatLng.map(c => `${c[1]},${c[0]}`).join(';');
+  const url = `${CONFIG.osrm}${path}?overview=full&geometries=geojson&steps=false`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`OSRM HTTP ${res.status}`);
+  const j = await res.json();
+  if (j.code !== 'Ok' || !j.routes?.length) throw new Error(`OSRM ${j.code}: ${j.message||''}`);
+  const r = j.routes[0];
+  const out = { geometry:r.geometry, km:r.distance/1000, min:r.duration/60 };
+  try { localStorage.setItem(key, JSON.stringify(out)); } catch(e) {}
+  return out;
+}
+
+function bboxOverlap(a, b) { return a[0] <= b[2] && a[2] >= b[0] && a[1] <= b[3] && a[3] >= b[1]; }
+// ---------- 시간대 판정 ----------
+const toMin = hhmm => { const [h, m] = hhmm.split(':').map(Number); return h * 60 + m; };
+const pad2 = n => String(n).padStart(2, '0');
+const fmtHM = d => `${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+const DOW = ['일','월','화','수','목','금','토'];
+function legDepart(leg) { return new Date(`${leg.iso}T${leg.depart || '09:00'}:00`); }
+function addMin(d, m) { return new Date(d.getTime() + m * 60000); }
+// sched 규칙에 대해 date(현지 벽시계) 시점의 활성 여부. null = 판정 대상 아님
+function isActive(sched, date) {
+  if (sched === 'always') return true;
+  if (!Array.isArray(sched)) return null;
+  const day = date.getDay(), prev = (day + 6) % 7, hm = date.getHours() * 60 + date.getMinutes();
+  for (const r of sched) {
+    const f = toMin(r.f), t = toMin(r.t);
+    if (f <= t) { if (r.d.includes(day) && hm >= f && hm < t) return true; }
+    else {                                   // 자정 넘김: 당일 f 이후 또는 전날 규칙의 t 이전
+      if (r.d.includes(day) && hm >= f) return true;
+      if (r.d.includes(prev) && hm < t) return true;
+    }
+  }
+  return false;
+}
+// 경로가 폴리곤에 처음 닿는 지점까지의 거리(km) — 정점 내부 탐색 후, 없으면 교차점 사용
+function firstEntryKm(lineFeature, zone) {
+  const coords = lineFeature.geometry.coordinates;
+  const start = turf.point(coords[0]);
+  for (let i = 0; i < coords.length; i++) {
+    if (turf.booleanPointInPolygon(turf.point(coords[i]), zone))
+      return turf.length(turf.lineString(coords.slice(0, Math.max(i, 1) + 1)), { units:'kilometers' });
+  }
+  const ix = turf.lineIntersect(lineFeature, zone).features;
+  if (!ix.length) return null;
+  return Math.min(...ix.map(p => turf.length(turf.lineSlice(start, p, lineFeature), { units:'kilometers' })));
+}
+// 반환: [{name, kind, hours, atKm, at:Date, active:true|false|null}]  (kind ztl/night만)
+function checkZtl(lineFeature, leg, durationMin) {
+  const out = [];
+  const lb = turf.bbox(lineFeature);
+  const totalKm = turf.length(lineFeature, { units:'kilometers' });
+  const dep = legDepart(leg);
+  ztlFeatures.forEach(z => {
+    const k = z.properties.kind;
+    if (k !== 'ztl' && k !== 'night') return;
+    if (!bboxOverlap(lb, z.bbox)) return;
+    if (!turf.booleanIntersects(lineFeature, z.test)) return;
+    const atKm = firstEntryKm(lineFeature, z.test) ?? 0;
+    const at = addMin(dep, totalKm ? durationMin * atKm / totalKm : 0);
+    out.push({ name:z.properties.name, kind:k, hours:z.properties.hours, atKm, at, active:isActive(z.properties.sched, at) });
+  });
+  out.sort((a, b) => a.atKm - b.atKm);
+  return out;
+}
+const violations = st => st.hits.filter(h => h.active === true);
+const passesOff  = st => st.hits.filter(h => h.active === false);
+function rejudge(i) {              // 출발시각만 바뀐 경우: 재라우팅 없이 판정만 갱신
+  const st = legState[i]; if (!st.line) return;
+  st.hits = checkZtl(st.line, CONFIG.legs[i], st.min);
+  drawLeg(i); renderLegs(); updateStatus();
+}
+
+async function routeLeg(i) {
+  const leg = CONFIG.legs[i], st = legState[i];
+  st.status = 'loading'; renderLegs();
+  try {
+    const coords = leg.wps.map(id => CONFIG.places[id].ll);
+    const r = await fetchRoute(coords);
+    st.line = turf.lineString(r.geometry.coordinates);
+    st.km = r.km; st.min = r.min;
+    st.hits = checkZtl(st.line, leg, st.min);
+    st.status = 'ok';
+  } catch (e) {
+    st.status = 'error'; st.err = e.message; st.line = null; st.hits = [];
+  }
+  drawLeg(i); renderLegs(); updateStatus();
+}
+
+function drawLeg(i) {
+  const st = legState[i];
+  if (st.layer) { routeLayer.removeLayer(st.layer); st.layer = null; }
+  if (!st.line) return;
+  const isActive = i === activeLeg;
+  const color = violations(st).length ? '#ff4d4f' : passesOff(st).length ? '#f5a623' : '#4c8dff';
+  st.layer = L.geoJSON(st.line, {
+    style:{ color, weight: isActive ? 6 : 3.5, opacity: isActive ? 0.95 : 0.55 }
+  }).bindTooltip(`${CONFIG.legs[i].date} · ${st.km.toFixed(0)} km · ${fmtMin(st.min)}`, { sticky:true });
+  st.layer.addTo(routeLayer);
+  applyVisibility();
+}
+
+// turf.along()은 정점과 정확히 겹치면 경로 배열의 원본 참조를 반환하므로 절대 in-place reverse() 금지
+function toLatLng(pt){ const c = turf.getCoord(pt); return [c[1], c[0]]; }
+
+function fmtMin(m){ const h = Math.floor(m/60), mm = Math.round(m%60); return h ? `${h}h ${mm}m` : `${mm}m`; }
+
+function renderLegs() {
+  const el = document.getElementById('legs');
+  el.innerHTML = CONFIG.legs.map((leg, i) => {
+    const st = legState[i];
+    let badge;
+    if (st.status === 'wait' || st.status === 'loading') badge = `<span class="badge b-wait">${st.status==='loading'?'계산 중…':'대기'}</span>`;
+    else if (st.status === 'error') badge = `<span class="badge b-bad" title="${st.err||''}">라우팅 실패</span>`;
+    else if (violations(st).length) badge = `<span class="badge b-bad">ZTL 위반 ${violations(st).length}</span>`;
+    else if (passesOff(st).length) badge = `<span class="badge b-info">비활성 시간 통과 ${passesOff(st).length}</span>`;
+    else badge = `<span class="badge b-ok">ZTL 회피 OK</span>`;
+    const meta = st.status === 'ok' ? `${st.km.toFixed(0)} km · 약 ${fmtMin(st.min)}` : (st.status==='error' ? (st.err||'') : '');
+    const hits = st.hits.map(h => {
+      const col = h.active === true ? 'var(--bad)' : h.active === false ? 'var(--warn)' : 'var(--muted)';
+      const mark = h.active === true ? '⚠ 위반' : h.active === false ? '○ 비활성' : '? 규칙없음';
+      return `<div class="meta" style="color:${col}">${mark} · ${h.name} · ${fmtHM(h.at)} 도착 <span style="color:var(--muted)">(${h.hours})</span></div>`;
+    }).join('');
+    const dep = legDepart(leg), arr = st.status === 'ok' ? addMin(dep, st.min) : null;
+    const timeRow = `<div class="meta">출발 <input type="time" class="dep" data-i="${i}" value="${leg.depart}" step="300">
+      ${arr ? `→ 도착 약 ${fmtHM(arr)} (${DOW[dep.getDay()]})` : ''}</div>`;
+    const tent = leg.tentative ? ` <span class="badge b-info">잠정</span>` : '';
+    return `<div class="leg ${i===activeLeg?'active':''}" data-i="${i}">
+      <div class="top"><span class="date">${leg.date}${tent}</span>${badge}</div>
+      <div class="title">${leg.title}</div>
+      <div class="meta">${meta}</div>${timeRow}${hits}
+      <div class="wps">${leg.wps.map(id => `<span>${CONFIG.places[id].name}</span>`).join('')}</div>
+    </div>`;
+  }).join('');
+  el.querySelectorAll('.leg').forEach(d => d.addEventListener('click', () => selectLeg(+d.dataset.i)));
+  el.querySelectorAll('input.dep').forEach(inp => {
+    inp.addEventListener('click', e => e.stopPropagation());
+    inp.addEventListener('change', e => { e.stopPropagation(); const i = +inp.dataset.i; if (inp.value) { CONFIG.legs[i].depart = inp.value; rejudge(i); } });
+  });
+}
+
+function selectLeg(i) {
+  stopAnim();
+  activeLeg = i;
+  CONFIG.legs.forEach((_, k) => drawLeg(k));
+  renderLegs();
+  const st = legState[i];
+  if (st.layer) { map.invalidateSize(); map.fitBounds(st.layer.getBounds().pad(0.15)); }
+  document.getElementById('play').disabled = !st.line;
+}
+
+function updateStatus() {
+  const done = legState.filter(s => s.status==='ok').length;
+  const bad = legState.filter(s => violations(s).length).length;
+  const off = legState.filter(s => passesOff(s).length).length;
+  const err = legState.filter(s => s.status==='error').length;
+  const totalKm = legState.reduce((a,s) => a + (s.km||0), 0);
+  document.getElementById('status').textContent =
+    `구간 ${done}/${CONFIG.legs.length} 계산 · 총 ${totalKm.toFixed(0)} km · ZTL 위반 ${bad}건 · 비활성 시간 통과 ${off}건${err?` · 실패 ${err}건`:''}`;
+}
+
+function applyVisibility() {
+  const all = document.getElementById('allToggle').checked;
+  legState.forEach((st, i) => {
+    if (!st.layer) return;
+    const show = all || i === activeLeg;
+    if (show && !routeLayer.hasLayer(st.layer)) routeLayer.addLayer(st.layer);
+    if (!show && routeLayer.hasLayer(st.layer)) routeLayer.removeLayer(st.layer);
+  });
+}
+
+// =====================================================================
+// 재생 애니메이션
+// =====================================================================
+let carMarker = null, animId = null, animPos = 0, lastTs = 0;
+const carIcon = L.divIcon({ className:'', html:'<div class="car-icon">🚗</div>', iconSize:[24,24], iconAnchor:[12,12] });
+
+function startAnim() {
+  const st = legState[activeLeg]; if (!st?.line) return;
+  stopAnim();
+  const totalKm = turf.length(st.line, { units:'kilometers' });
+  animPos = 0; lastTs = 0;
+  if (!carMarker) carMarker = L.marker(toLatLng(turf.along(st.line, 0)), { icon:carIcon, zIndexOffset:1000 }).addTo(map);
+  document.getElementById('play').disabled = true; document.getElementById('stop').disabled = false;
+  const step = ts => {
+    if (!lastTs) lastTs = ts;
+    const dt = (ts - lastTs) / 1000; lastTs = ts;
+    const speed = +document.getElementById('speed').value;      // 1..10
+    animPos += dt * speed * speed * 2;                            // km/s (비선형 슬라이더)
+    if (animPos >= totalKm) { animPos = totalKm; }
+    const pt = turf.along(st.line, animPos, { units:'kilometers' });
+    const ll = toLatLng(pt);
+    carMarker.setLatLng(ll);
+    const leg = CONFIG.legs[activeLeg];
+    const now = addMin(legDepart(leg), totalKm ? st.min * animPos / totalKm : 0);
+    const zone = ztlFeatures.find(z => (z.properties.kind==='ztl' || z.properties.kind==='night') && bboxOverlap([ll[1],ll[0],ll[1],ll[0]], z.bbox) && turf.booleanPointInPolygon(pt, z.test));
+    const act = zone ? isActive(zone.properties.sched, now) : null;
+    carMarker.getElement().firstChild.style.filter = zone ? (act ? 'drop-shadow(0 0 6px #ff4d4f)' : 'drop-shadow(0 0 6px #f5a623)') : '';
+    document.getElementById('status').textContent =
+      `${leg.date} ${fmtHM(now)} · ${animPos.toFixed(0)} / ${totalKm.toFixed(0)} km${zone ? ` · ${act ? '⚠ ZTL 활성 내부!' : '○ ZTL 내부(비활성 시간)'} ${zone.properties.name}` : ''}`;
+    if (animPos < totalKm) animId = requestAnimationFrame(step);
+    else { animId = null; document.getElementById('play').disabled = false; }
+  };
+  animId = requestAnimationFrame(step);
+}
+function stopAnim() {
+  if (animId) cancelAnimationFrame(animId); animId = null;
+  if (carMarker) { map.removeLayer(carMarker); carMarker = null; }
+  document.getElementById('stop').disabled = true;
+  document.getElementById('play').disabled = !(legState[activeLeg]?.line);
+  updateStatus();
+}
+
+// =====================================================================
+// 이벤트 + 초기 실행
+// =====================================================================
+document.getElementById('play').addEventListener('click', startAnim);
+document.getElementById('stop').addEventListener('click', stopAnim);
+document.getElementById('ztlToggle').addEventListener('change', e => e.target.checked ? ztlLayer.addTo(map) : map.removeLayer(ztlLayer));
+document.getElementById('allToggle').addEventListener('change', applyVisibility);
+document.getElementById('reroute').addEventListener('click', async () => {
+  try { Object.keys(localStorage).filter(k => k.startsWith('osrm:')).forEach(k => localStorage.removeItem(k)); } catch(e) {}
+  for (let i = 0; i < CONFIG.legs.length; i++) await routeLeg(i);
+});
+
+(async () => {
+  renderLegs();
+  for (let i = 0; i < CONFIG.legs.length; i++) {
+    await routeLeg(i);                       // 데모 서버 예의상 순차 호출
+    await new Promise(r => setTimeout(r, 250));
+  }
+  fitAll();
+})();
+</script>
+</body>
+</html>
